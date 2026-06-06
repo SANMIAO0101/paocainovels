@@ -1,0 +1,2 @@
+
+.tag-cloud{display:flex;gap:10px;flex-wrap:wrap}.tag-card{display:block;padding:18px;border-radius:22px;border:1px solid var(--line);background:var(--paper);box-shadow:var(--soft-shadow)}.tag-card strong{display:block;color:var(--sage-dark);font-size:22px}.tag-page .grid{margin-top:20px}

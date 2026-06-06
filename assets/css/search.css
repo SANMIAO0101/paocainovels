@@ -1,0 +1,2 @@
+
+.search-page .form-panel{margin:14px 0 24px}.result-list{display:grid;gap:16px}.result-item{display:grid;grid-template-columns:110px 1fr;gap:18px;border:1px solid var(--line);border-radius:22px;background:var(--paper);padding:16px}.result-item img{border-radius:16px;aspect-ratio:3/4;object-fit:cover}.result-title{margin:0;color:var(--sage-dark)}

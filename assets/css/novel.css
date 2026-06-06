@@ -1,0 +1,2 @@
+
+.novel-page .chapter-list{display:grid;gap:12px}.novel-page .chapter-row{grid-template-columns:1fr auto auto auto}.chapter-note{color:var(--muted);font-size:14px}.fav-active{background:var(--pink)!important;color:var(--sage-dark)!important}

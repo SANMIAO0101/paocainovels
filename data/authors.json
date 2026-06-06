@@ -1,0 +1,35 @@
+[
+  {
+    "id": "author-1",
+    "name": "泡菜坊主",
+    "avatar": "assets/images/avatars/author-1.svg",
+    "bio": "泡菜小说坊站主。偏爱悬疑爱情、复杂关系、前世今生和暗线反转。",
+    "social": {
+      "weibo": "https://weibo.com/",
+      "wechat": "assets/images/icons/wechat-qr.svg",
+      "xiaohongshu": "https://www.xiaohongshu.com/"
+    }
+  },
+  {
+    "id": "author-2",
+    "name": "金枝",
+    "avatar": "assets/images/avatars/author-2.svg",
+    "bio": "喜欢写温柔又危险的现代奇幻故事。",
+    "social": {
+      "weibo": "https://weibo.com/",
+      "wechat": "assets/images/icons/wechat-qr.svg",
+      "xiaohongshu": "https://www.xiaohongshu.com/"
+    }
+  },
+  {
+    "id": "author-3",
+    "name": "弯月",
+    "avatar": "assets/images/avatars/author-3.svg",
+    "bio": "耽美悬疑作者，爱写月光、病例和不可靠证词。",
+    "social": {
+      "weibo": "https://weibo.com/",
+      "wechat": "assets/images/icons/wechat-qr.svg",
+      "xiaohongshu": "https://www.xiaohongshu.com/"
+    }
+  }
+]

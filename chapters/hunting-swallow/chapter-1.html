@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="zh-CN" id="top">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>猎捕燕子 第一话｜泡菜小说坊</title>
+
+  <link rel="icon" href="../../assets/images/logo/logo.png">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/chapter.css">
+  <link rel="stylesheet" href="../../assets/css/mobile.css">
+
+  <style>
+
+    :root {
+      --bg: #f6f0e5;
+      --paper: #fffaf0;
+      --sage: #7f9368;
+      --sage-dark: #5f754b;
+      --purple: #dcd5ee;
+      --pink: #f1d3d7;
+      --text: #3f3a32;
+      --muted: #8a8175;
+      --line: #eadfce;
+      --warm: #cf9264;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(220, 213, 238, 0.45), transparent 35%),
+        radial-gradient(circle at top right, rgba(241, 211, 215, 0.45), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      font-family: "Noto Serif SC", "Songti SC", "Microsoft YaHei", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    a { transition: all 0.2s ease; }
+
+    .reader-wrap {
+      width: min(900px, 92%);
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 250, 240, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--sage-dark);
+      font-weight: 800;
+      font-size: 22px;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 14px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a,
+    .nav-links button {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--sage-dark);
+      padding: 9px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(95, 117, 75, 0.08);
+      font-family: inherit;
+    }
+
+    .nav-links a:hover,
+    .nav-links button:hover {
+      background: var(--sage);
+      color: #fff;
+      border-color: var(--sage);
+    }
+
+    .chapter-head {
+      margin-top: 36px;
+      text-align: center;
+      background: rgba(255, 250, 240, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 14px 34px rgba(95, 117, 75, 0.08);
+    }
+
+    .chapter-head h1 {
+      margin: 0 0 10px;
+      color: var(--sage-dark);
+      font-size: clamp(30px, 5vw, 42px);
+      letter-spacing: 0.06em;
+    }
+
+    .chapter-head p {
+      margin: 6px 0;
+      color: var(--muted);
+    }
+
+    .quick-actions {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      font-size: 15px;
+      background: var(--paper);
+      color: var(--sage-dark);
+      font-family: inherit;
+    }
+
+    .btn:hover {
+      background: var(--purple);
+      color: var(--sage-dark);
+    }
+
+    .btn-primary {
+      background: var(--sage);
+      color: #fff;
+      border-color: var(--sage);
+      box-shadow: 0 10px 22px rgba(127, 147, 104, 0.22);
+    }
+
+    .btn-primary:hover {
+      background: var(--sage-dark);
+      color: #fff;
+      border-color: var(--sage-dark);
+    }
+
+    .reader-paper {
+      margin-top: 28px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: clamp(24px, 5vw, 52px);
+      line-height: 2.15;
+      font-size: 18px;
+      box-shadow: 0 16px 36px rgba(95, 117, 75, 0.08);
+    }
+
+    .reader-paper p {
+      margin: 0 0 1.35em;
+      text-indent: 2em;
+    }
+
+    .reader-paper blockquote {
+      margin: 1.6em 0;
+      padding: 18px 22px;
+      border-left: 5px solid var(--sage);
+      background: rgba(220, 213, 238, 0.26);
+      border-radius: 18px;
+      color: #53483f;
+      line-height: 2;
+    }
+
+    .reader-paper hr {
+      border: none;
+      border-top: 1px dashed var(--line);
+      margin: 2em 0;
+    }
+
+    .reader-paper strong {
+      color: var(--warm);
+      font-weight: 800;
+    }
+
+    .chapter-nav {
+      margin: 34px 0 28px;
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .social-section,
+    .recommend-section {
+      margin-top: 28px;
+      background: rgba(255, 250, 240, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 26px;
+      box-shadow: 0 14px 34px rgba(95, 117, 75, 0.08);
+    }
+
+    .social-section h2,
+    .recommend-section h2 {
+      margin: 0 0 10px;
+      color: var(--sage-dark);
+    }
+
+    .social-section p,
+    .recommend-section p {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .social-links {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .recommend-slider {
+      overflow: hidden;
+      position: relative;
+      margin-top: 18px;
+      border-radius: 24px;
+    }
+
+    .recommend-track {
+      display: flex;
+      gap: 18px;
+      width: max-content;
+      animation: recommendScroll 34s linear infinite;
+    }
+
+    .recommend-slider:hover .recommend-track {
+      animation-play-state: paused;
+    }
+
+    .recommend-card {
+      width: 165px;
+      flex: 0 0 auto;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 12px;
+      box-shadow: 0 10px 24px rgba(95, 117, 75, 0.1);
+    }
+
+    .recommend-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--sage);
+    }
+
+    .recommend-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 16px;
+      display: block;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+    }
+
+    .recommend-card strong {
+      display: block;
+      margin-top: 10px;
+      color: var(--sage-dark);
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .recommend-card span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .recommend-control {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .recommend-control button {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--sage-dark);
+      border-radius: 999px;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .recommend-control button:hover {
+      background: var(--sage);
+      color: #fff;
+    }
+
+    @keyframes recommendScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: rgba(255, 250, 240, 0.75);
+      padding: 26px 0;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    body.dark-mode {
+      --bg: #252820;
+      --paper: #31362b;
+      --text: #f2eadf;
+      --muted: #c9beaf;
+      --line: rgba(255,255,255,0.12);
+      background: #252820;
+      color: var(--text);
+    }
+
+    body.dark-mode .site-header,
+    body.dark-mode .chapter-head,
+    body.dark-mode .reader-paper,
+    body.dark-mode .social-section,
+    body.dark-mode .recommend-section,
+    body.dark-mode .site-footer,
+    body.dark-mode .nav-links a,
+    body.dark-mode .nav-links button,
+    body.dark-mode .btn,
+    body.dark-mode .recommend-card,
+    body.dark-mode .recommend-control button {
+      background: #31362b;
+      color: var(--text);
+      border-color: rgba(255,255,255,0.12);
+    }
+
+    body.dark-mode .btn-primary {
+      background: var(--sage);
+      color: #fff;
+    }
+
+    body.dark-mode .reader-paper blockquote {
+      background: rgba(220, 213, 238, 0.12);
+      color: var(--text);
+    }
+
+    @media (max-width: 720px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
+      .reader-paper {
+        font-size: 17px;
+        line-height: 2.05;
+      }
+
+      .chapter-nav {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .recommend-card {
+        width: 145px;
+      }
+
+      .recommend-card img {
+        height: 195px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../../index.html">
+        <img src="../../assets/images/logo/logo.png" alt="泡菜小说坊 Logo">
+        <span>泡菜小说坊</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../stories.html">Stories</a>
+        <a href="../../search.html">搜索</a>
+        <button type="button" id="themeToggle">夜间模式</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-wrap">
+
+    <section class="chapter-head">
+      <h1>第一话</h1>
+      <p>《猎捕燕子》</p>
+      <p>作者：Whale</p>
+
+      <div class="quick-actions">
+        <a class="btn" href="#bottom">返回底部</a>
+        <a class="btn" href="../../novels/hunting-swallow.html">目录</a>
+        <a class="btn" href="../../novels/hunting-swallow.html">上一页</a>
+        <a class="btn btn-primary" href="chapter-2.html">下一页</a>
+      </div>
+    </section>
+
+    <article class="reader-paper">
+      <p><strong>“他妈的。”</strong></p>
+
+      <p>海俊在心里骂了不知第几次。如果可以，他真想扯开嗓子痛快地吼出来，但现在，他连呼吸声都要屏住。就像一只下水道的老鼠，只敢缩在墙后，观察着外面的动向。</p>
+
+      <p>冷汗顺着额头流下。尽管是秋天，风很凉，但极度紧张导致身体僵硬，他完全感觉不到寒冷。扶着墙的手掌渗出了汗水，双唇和口腔干渴得像是要烧起来一样。</p>
+
+      <p>被抓到就完了。要是仅仅“完了”还好，最坏的情况是被拖到什么地方，活埋进土里。脑海里已经浮现出了画面：自己亲手握着铲子挖坑，周围那群不知名的混混正狞笑着说“这就是你的坟墓”，而他被绳子绑着，不得不爬进去。</p>
+
+      <p>他咽了咽口水，探头看了一眼。远处的那几个大块头四处张望，就像察觉到了什么，猛地转过头看向海俊藏身的方向。海俊赶紧把身体缩回墙后。</p>
+
+      <p>这里也不安全。</p>
+
+      <p>但在这世上，究竟哪里才有安全的地方？他曾想过干脆到国外避避风头，直到风声平息，但看看现实吧。别说护照了，连买票的钱都没有。</p>
+
+      <p>为什么会变成这样？海俊满心怨恨地向下看去。没错，罪魁祸首就是那玩意儿。明明长在自己身上，却时不时带点自己的意志，随心所欲地勃起、膨胀、消退。这个想切也切不掉的烂肉，就是这一切的始作俑者。</p>
+
+      <p>海俊是个普通的“燕子”（牛郎）。给女人卖酒、卖话，必要时连身体也一起卖的普通男娼。俗称“燕子”，外来语也叫“Host”。</p>
+
+      <p>没学过什么本事，有的仅仅是一根不安分的性器和一张清秀的脸。对海俊来说，这份工作算得上是天职。在女人面前纯真地傻笑，一口一个“姐、姐”地叫着，再撒撒娇，就能得到宠爱，得到钱。</p>
+
+      <p>性欲也就顺便满足了。当然，作为拿钱的一方，海俊在夜晚的工作中总是竭尽全力。他拥有极佳的职业素养，为了让顾客满意，舔、咬、吸，舌头磨破皮都在所不惜。</p>
+
+      <p>直到那一天，她出现了。她出现在那种破旧的地方，显得格外干练、美丽。看起来也很有钱。海俊有幸被她点名，像只发现新主人的流浪猫一样，使出浑身解数讨好。</p>
+
+      <p>她叼着烟，他就贴过去，用那只花了高价买来的二手ZIPPO打火机帮她点烟；她喝酒，他就伺候下酒菜；让她唱歌就唱歌，让她跳舞就跳舞，总之能做的事都做了。他只希望这位韩英华能看上他，随便给他租个单身公寓，像喂猫粮一样给他塞钱。</p>
+
+      <p>而万众期待的最终关卡已经近在眼前了。只要那一夜伺候得舒服，她就会留他在身边，反之，就会被抛弃。</p>
+
+      <p>海俊把那根没有一根杂毛的下体洗得干干净净，还做了认真的舌头练习。手指关节也活动开了，拉伸也没落下，确保腰、屁股、大腿、核心肌肉都能发挥出最佳状态。为了这一天，他甚至忍了好几天没打过手枪。</p>
+
+      <p>确认镜子里的自己几近完美后，他自信满满地去了酒店。韩英华仿佛在炫耀身为年上者的老练，早就赤裸着身体，只披了一件丝绸睡袍，优雅地坐在沙发上。</p>
+
+      <p>韩英华叼着烟，微微一点头。海俊一生都是看着人脸色长大的，光看这一个点头动作，就知道她想要什么。他顺从地解开衬衫扣子，跳了一场脱衣舞。连底裤都脱得干干净净，爬到她脚边吻了吻脚背。</p>
+
+      <p>一切都很顺利地到了床上。气氛正浓，这段时间的禁欲没白费，海俊的性器已经完全挺立。他暗下决心要将这辈子学到的所有技巧在今晚全部发挥出来，可就在这时。</p>
+
+      <p>叮咚。</p>
+
+      <p>门铃响了。为了不破坏气氛，海俊假装没听见。但韩英华不一样。她推开海俊的肩膀，坐起身来。</p>
+
+      <p>叮咚。</p>
+
+      <p>门铃又响了一声。</p>
+
+      <p>“要不……我去看看？”</p>
+
+      <p>韩英华的脸色变得惨白。简直像是一个正在准备尖叫的恐怖片女主角。她急忙裹上睡袍下床。</p>
+
+      <p>意识到情况不对的海俊也慌忙把脚套进内裤里。那是他最有价值的一件内裤，虽然是黑色的，但带着隐约的珠光，是他决胜的关键。</p>
+
+      <p>“英华啊。”</p>
+
+      <p>门外传来低沉的嗓音。那声音虽然不是死神，却让人毛骨悚然。海俊吓得缩了缩脖子。</p>
+
+      <p>“是你开，还是我开？”</p>
+
+      <p>语气并不愤怒。但根据经验，这种时刻还能保持这种情绪威胁别人的人，才是世上最可怕、最危险的。海俊的脸色也变得和韩英华一样惨白。</p>
+
+      <p>“你快躲起来。”</p>
+
+      <p>这时候追问是不懂行的人才会做的事。海俊还没来得及说出口，就被推着背，只能找地方躲避。可根本没地方藏。浴室的墙壁偏偏还是透明玻璃。</p>
+
+      <p>他本想骂一句这酒店是有什么病才用透明玻璃不考虑隐私，但反应过来必须拉下百叶窗，连忙跑了过去。门反锁，百叶窗拉下撑着，谁知道里面是谁？</p>
+
+      <p>要是把玻璃砸了怎么办？</p>
+
+      <p>他急得直跺脚，门外的男人却在数数。数到“三”的时候他以为会有间隙，可“二、一”数得飞快。那惊人的速度让海俊慌忙抓着衣服，像个笨蛋一样被椅子腿绊倒，“哐当”一声摔了个狗吃屎。</p>
+
+      <p>远处看是喜剧，近处看就是黑色幽默。他揉着摔得通红的膝盖，一瘸一拐地站起来。</p>
+
+      <p>与此同时，门开了。</p>
+
+      <p>一个像门板一样宽大的男人站在门前。男人习惯性地低着头走进来。他实在是太高了，必须得向后仰头才能看到他的脸。</p>
+
+      <p>帅。是真的帅。如果是在店里上班，绝对是NO.1，在街上看到肯定会回头看个三次，不，五次以上。</p>
+
+      <p>但海俊完全没有被迷住。现在的局势实在太紧急了。更何况，他不可能感知不到男人全身流露出的那种危险气息。在高中时代因为父亲欠债而被高利贷和混混毒打时，他见过很多这样的人。那些笑着打人的人渣。</p>
+
+      <p>“啧，玩得够廉价的啊。”</p>
+
+      <p>男人用手中的卡轻轻拍了拍自己的脸颊，迈步走了进来。他的视线投向海俊。看到海俊那副寒碜的身体，男人轻蔑地冷笑了一声。尽管如此，海俊也不敢发火。</p>
+
+      <p>站在男人身后的那两个大块头也够吓人的。海俊下颚不停地颤抖。根本没法解释。酒店里只有一个光着身子的女人和一个只穿着内裤的男人，除了做爱还能有什么目的？</p>
+
+      <p>他现在应该立刻跪下，双手合十拼命求饶。这是关系到那只重要的蛋蛋会不会被切掉的危机。海俊既不想失去重要的宝贝，也不想死得惨不忍睹。</p>
+
+      <p>只有逃跑。虽然对不起韩英华，但他自己先要保命。他滴溜溜地转着眼珠，在男人和那群大块头的腿缝间发现了一个小空隙。那个大小足够他钻过去。</p>
+
+      <p>他猛地冲了过去。小时候为了躲避混混在巷子里飞檐走壁的本领还没退化。他无视那群大块头“抓住那小子！”的怒吼，一头扎进消防通道疯狂奔跑。</p>
+
+      <p>经过了一段追逐，他拼尽全力才逃到了现在这条巷子里。踩在沥青路上的赤脚满是鲜血，呼吸到了嗓子眼。但海俊还是不敢出声。他不想因为被这群人发现，就把自己本就廉价的性命断送。</p>
+
+      <p>老天保佑，那群大块头分别钻进了不同的巷子。海俊背靠着墙壁滑了下来。刚才没见影子的两个路人，看了眼海俊躲藏的巷子。看到只穿着一条底裤的海俊，嘲笑着“是个变态吧”就走开了。真是丢脸丢到家了。</p>
+
+      <p>这种情况下既不能坐地铁也不能坐公交，只能打车，可装钱的钱包还在酒店。如果回去找衣服？除非他有两条命。虽然那群大块头正在巷子里搜索，但作为领头的那个男人很有可能还在原地。比起其他人，他更害怕那个男人。</p>
+
+      <p>干这一行，怎么可能没碰过别人的爱人？有的男人曾闯进店里砸场子，问是谁睡了他老婆；也有人要钱，把店都给掀了。那种时候只要稍微避一避就好。因为大多数人都像锅里的水，热得快，凉得也快。</p>
+
+      <p>但在这个男人身上，那种浅显的招数似乎行不通。他身上散发着比至今为止遇见的所有人都危险的气息。他能感觉到，那是在坎坷生活中磨炼出来的直觉——那个男人只需一只手，就能像折断燕子的脖子一样，折断他的喉咙。</p>
+
+      <p>相信这种预感准没错。如果因为想当个男人就去顶撞对方，运气好也就是受点伤，运气不好，死路一条。</p>
+
+      <hr>
+    </article>
+
+    <div class="chapter-nav" id="bottom">
+      <a class="btn" href="../../novels/hunting-swallow.html">← 上一页：返回目录</a>
+      <a class="btn" href="#top">返回顶部</a>
+      <a class="btn" href="../../novels/hunting-swallow.html">目录</a>
+      <a class="btn btn-primary" href="chapter-2.html">下一页：第2章 →</a>
+    </div>
+
+    <section class="social-section" id="social">
+      <h2>继续阅读</h2>
+      <p>前十章可免费阅读。后续章节可通过以下入口添加账号咨询。</p>
+
+      <div class="social-links">
+        <a class="btn" href="https://weibo.com/" target="_blank" rel="noopener">微博</a>
+        <a class="btn" href="../../assets/images/icons/wechat-qr.svg" target="_blank" rel="noopener">微信</a>
+        <a class="btn" href="https://www.xiaohongshu.com/" target="_blank" rel="noopener">小红书</a>
+      </div>
+    </section>
+
+
+    <section class="recommend-section" id="similar-novels">
+      <h2>同类型小说推荐</h2>
+      <p>喜欢《猎捕燕子》的话，也可以继续浏览这些现代、悬疑、暗黑拉扯类型作品。</p>
+
+      <div class="recommend-slider">
+        <div class="recommend-track" id="recommendTrack">
+          <a class="recommend-card" href="../../novels/liuan.html">
+            <img src="../../assets/images/covers/liuan-cover.svg" alt="柳安封面">
+            <strong>柳安</strong>
+            <span>现代 · 悬疑 · 爱情</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/fanzuoyong.html">
+            <img src="../../assets/images/covers/fanzuoyong-cover.svg" alt="反作用定律封面">
+            <strong>反作用定律</strong>
+            <span>现代 · 拉扯 · 女频</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/huimeng.html">
+            <img src="../../assets/images/covers/huimeng-cover.svg" alt="灰梦封面">
+            <strong>灰梦</strong>
+            <span>悬疑 · 都市 · 秘密</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/yuese.html">
+            <img src="../../assets/images/covers/yuese-cover.svg" alt="月色陷阱封面">
+            <strong>月色陷阱</strong>
+            <span>暗黑 · 爱情 · 追逐</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/hunting-swallow.html">
+            <img src="../../assets/images/covers/hunting-swallow.png" alt="猎捕燕子封面">
+            <strong>猎捕燕子</strong>
+            <span>耽美 · 现代 · 暗黑</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/liuan.html">
+            <img src="../../assets/images/covers/liuan-cover.svg" alt="柳安封面">
+            <strong>柳安</strong>
+            <span>现代 · 悬疑 · 爱情</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/fanzuoyong.html">
+            <img src="../../assets/images/covers/fanzuoyong-cover.svg" alt="反作用定律封面">
+            <strong>反作用定律</strong>
+            <span>现代 · 拉扯 · 女频</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/huimeng.html">
+            <img src="../../assets/images/covers/huimeng-cover.svg" alt="灰梦封面">
+            <strong>灰梦</strong>
+            <span>悬疑 · 都市 · 秘密</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/yuese.html">
+            <img src="../../assets/images/covers/yuese-cover.svg" alt="月色陷阱封面">
+            <strong>月色陷阱</strong>
+            <span>暗黑 · 爱情 · 追逐</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/hunting-swallow.html">
+            <img src="../../assets/images/covers/hunting-swallow.png" alt="猎捕燕子封面">
+            <strong>猎捕燕子</strong>
+            <span>耽美 · 现代 · 暗黑</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="recommend-control">
+        <button type="button" id="recommendPrev">← 向左滑动</button>
+        <button type="button" id="recommendNext">向右滑动 →</button>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 泡菜小说坊 Paocai Novels</p>
+    <p>免费试读 · 社交入口咨询 · 长篇阅读收藏</p>
+  </footer>
+
+
+  <script>
+    const themeToggle = document.getElementById("themeToggle");
+
+    if (themeToggle) {
+      const savedTheme = localStorage.getItem("paocai-theme");
+      if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        themeToggle.textContent = "日间模式";
+      }
+
+      themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          localStorage.setItem("paocai-theme", "dark");
+          themeToggle.textContent = "日间模式";
+        } else {
+          localStorage.setItem("paocai-theme", "light");
+          themeToggle.textContent = "夜间模式";
+        }
+      });
+    }
+
+    const recommendTrack = document.getElementById("recommendTrack");
+    const recommendPrev = document.getElementById("recommendPrev");
+    const recommendNext = document.getElementById("recommendNext");
+
+    if (recommendTrack && recommendPrev && recommendNext) {
+      recommendPrev.addEventListener("click", function () {
+        recommendTrack.style.animation = "none";
+        recommendTrack.scrollBy({ left: -220, behavior: "smooth" });
+      });
+
+      recommendNext.addEventListener("click", function () {
+        recommendTrack.style.animation = "none";
+        recommendTrack.scrollBy({ left: 220, behavior: "smooth" });
+      });
+    }
+  </script>
+
+
+</body>
+</html>

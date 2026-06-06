@@ -1,0 +1,361 @@
+[
+  {
+    "id": "liuan",
+    "title": "柳安",
+    "subtitle": "一场从雨夜开始的悬疑爱情。",
+    "authorId": "author-1",
+    "authorName": "泡菜坊主",
+    "category": "女频",
+    "status": "连载中",
+    "updatedAt": "2026-06-06",
+    "featured": true,
+    "cover": "assets/images/covers/liuan-cover.svg",
+    "banner": "assets/images/banners/liuan-banner.svg",
+    "tags": [
+      "bg",
+      "modern",
+      "suspense"
+    ],
+    "intro": "柳安收到一封没有署名的旧信，信里写着她从未公开过的秘密。为了查清寄信人，她重新靠近那位曾经差点毁掉她人生的男人。真相像一层层潮湿的墙纸，被撕开时，露出的不只是旧案，还有两个人始终无法承认的爱。",
+    "heroine": "柳安：外表温和冷静，擅长隐藏情绪。她不轻易相信任何人，却总能在危险里做出最锋利的判断。",
+    "hero": "沈泊舟：看似克制疏离的调查顾问，实际极擅长操控局面。对柳安的保护欲和占有欲都藏在礼貌之下。",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "第1章 雨夜旧信",
+        "date": "2026-06-06",
+        "file": "chapters/liuan/chapter-1.html",
+        "access": "free",
+        "summary": "柳安在雨夜收到一封旧信。",
+        "content": [
+          "雨落在窗台上时，柳安正把最后一盏灯关掉。楼道深处传来信箱合上的轻响，像有人在黑暗里轻轻咬断了一根线。",
+          "她没有立刻去看。很多年前开始，她就习惯先判断声音的方向、距离和可能性，然后再允许自己靠近。",
+          "信封是米白色的，边角被雨水浸得发软。上面没有寄件人，只有她的名字。柳安。两个字写得端正，像一把故意擦干净的刀。",
+          "信纸上只有一句话：你以为那晚死去的人，真的只有一个吗？",
+          "柳安指尖一顿。窗外车灯从玻璃上划过去，她在倒影里看见自己苍白的脸，也看见身后门缝里多出了一道影子。"
+        ]
+      },
+      {
+        "id": "chapter-2",
+        "title": "第2章 沈泊舟",
+        "date": "2026-06-07",
+        "file": "chapters/liuan/chapter-2.html",
+        "access": "free",
+        "summary": "她再次见到沈泊舟。",
+        "content": [
+          "沈泊舟来得比她预想中更快。",
+          "他站在便利店的暖光下，黑伞收得很整齐，袖口没有沾上一点雨水。这样的人无论出现在什么地方，都像提前知道结局。",
+          "柳安把信推过去，声音平静：‘你最好告诉我，这不是你开的玩笑。’",
+          "沈泊舟低头看完，唇边那点淡淡的笑意消失了。",
+          "‘不是我。’他说，‘但寄信的人认识我们。’",
+          "我们。柳安很久没有听见这个词被他用得这样自然。她抬眼看他，忽然想起七年前，他也曾用同样的语气告诉她：别回头，往前走。"
+        ]
+      },
+      {
+        "id": "chapter-3",
+        "title": "第3章 黑色录音",
+        "date": "2026-06-08",
+        "file": "chapters/liuan/chapter-3.html",
+        "access": "order",
+        "summary": "后续章节可通过社交入口联系。"
+      }
+    ]
+  },
+  {
+    "id": "hunting-swallow",
+    "title": "猎捕燕子",
+    "subtitle": "危险猎人与逃不掉的燕子。",
+    "authorId": "author-2",
+    "authorName": "Whale",
+    "category": "耽美",
+    "categoryKey": "bl",
+    "status": "连载中",
+    "updatedAt": "2026-05-26",
+    "featured": true,
+    "cover": "assets/images/covers/hunting-swallow.png",
+    "banner": "assets/images/covers/hunting-swallow.png",
+    "tags": [
+      "bl",
+      "modern",
+      "suspense"
+    ],
+    "tagNames": [
+      "耽美",
+      "现代",
+      "悬疑"
+    ],
+    "intro": "车海俊原本只是想接近一位有钱女客，却意外撞上她背后真正危险的人物李姜周。一次逃跑、一场误会，将他拖进无法轻易脱身的狩猎关系里。",
+    "heroine": "车海俊｜漂亮却卑微的男公关，为了还债周旋于客人之间，外表机灵油滑，内里却总在绝境里咬牙求生。",
+    "hero": "李姜周｜披着正经代表外壳的危险人物，冷静、强势、压迫感极强，温和表象下藏着难以捉摸的控制欲。",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "第一话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-1.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。",
+        "content": []
+      },
+      {
+        "id": "chapter-2",
+        "title": "第二话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-2.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。",
+        "content": []
+      },
+      {
+        "id": "chapter-3",
+        "title": "第三话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-3.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。",
+        "content": []
+      },
+      {
+        "id": "chapter-4",
+        "title": "第四话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-4.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。",
+        "content": []
+      },
+      {
+        "id": "chapter-5",
+        "title": "第五话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-5.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。",
+        "content": []
+      },
+      {
+        "id": "chapter-6",
+        "title": "第六章",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-6.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。",
+        "content": []
+      },
+      {
+        "id": "chapter-7",
+        "title": "第七章",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-7.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。",
+        "content": []
+      },
+      {
+        "id": "chapter-8",
+        "title": "第8话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-8.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。",
+        "content": []
+      },
+      {
+        "id": "chapter-9",
+        "title": "第9话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-9.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。",
+        "content": []
+      },
+      {
+        "id": "chapter-10",
+        "title": "第10话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-10.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。",
+        "content": []
+      }
+    ]
+  },
+  {
+    "id": "fanzuoyong",
+    "title": "反作用定律",
+    "subtitle": "越想逃离，越被命运推回彼此身边。",
+    "authorId": "author-1",
+    "authorName": "泡菜坊主",
+    "category": "女频",
+    "status": "连载中",
+    "updatedAt": "2026-06-05",
+    "featured": true,
+    "cover": "assets/images/covers/fanzuoyong-cover.svg",
+    "banner": "assets/images/banners/fanzuoyong-banner.svg",
+    "tags": [
+      "bg",
+      "modern"
+    ],
+    "intro": "财经主持人与年轻区长在舆论漩涡里维持一段不能公开的关系。她擅长把情绪剪辑成新闻，他擅长把野心伪装成温柔。",
+    "heroine": "许知眠：锋利、理性、事业心强，情感上却习惯后撤。",
+    "hero": "周砚庭：外表清贵克制，内里极具掌控欲，习惯把一切风险算进棋局。",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "第1章 镜头之外",
+        "date": "2026-06-05",
+        "file": "chapters/fanzuoyong/chapter-1.html",
+        "access": "free",
+        "summary": "镜头关闭后，她接到他的电话。",
+        "content": [
+          "直播灯熄灭的一瞬间，许知眠才终于松开握得发僵的手。",
+          "手机在化妆台上震动，屏幕亮起的名字让整个房间都安静下来。",
+          "周砚庭。",
+          "她没有立刻接。镜子里的女人妆容精致，眼神却像刚从一场无声的战役里退下来。",
+          "电话第三次响起时，她按下接听。那头的声音很低：‘今晚别回家。’"
+        ]
+      },
+      {
+        "id": "chapter-2",
+        "title": "第2章 危机公关",
+        "date": "2026-06-06",
+        "file": "chapters/fanzuoyong/chapter-2.html",
+        "access": "free",
+        "summary": "一条热搜把两个人推到台前。",
+        "content": [
+          "热搜是在凌晨两点爆的。",
+          "照片拍得模糊，却足够让所有人看清周砚庭替她挡住车门的动作。",
+          "许知眠盯着屏幕，忽然笑了一下。‘你不是说没人拍到吗？’",
+          "周砚庭站在窗边，声音平稳：‘拍到不代表不能处理。’",
+          "‘你处理新闻，我处理你。’她把手机反扣在桌上。"
+        ]
+      },
+      {
+        "id": "chapter-3",
+        "title": "第3章 未公开关系",
+        "date": "2026-06-07",
+        "file": "chapters/fanzuoyong/chapter-3.html",
+        "access": "order",
+        "summary": "后续章节可通过社交入口联系。"
+      }
+    ]
+  },
+  {
+    "id": "huimeng",
+    "title": "回梦诊所",
+    "subtitle": "每个噩梦，都藏着一段被篡改的记忆。",
+    "authorId": "author-2",
+    "authorName": "金枝",
+    "category": "女频",
+    "status": "已完结",
+    "updatedAt": "2026-06-02",
+    "featured": false,
+    "cover": "assets/images/covers/huimeng-cover.svg",
+    "banner": "assets/images/banners/huimeng-banner.svg",
+    "tags": [
+      "bg",
+      "modern",
+      "suspense"
+    ],
+    "intro": "乡镇诊所医生与夜间主播共同调查连环梦魇事件。白天她救人，夜里她被迫在梦里杀人。",
+    "heroine": "林栖：白天是安静的乡村教师，夜晚却用另一个身份直播。",
+    "hero": "顾停云：诊所医生，温柔得近乎无害，却总知道她最害怕什么。",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "第1章 梦里来客",
+        "date": "2026-06-01",
+        "file": "chapters/huimeng/chapter-1.html",
+        "access": "free",
+        "summary": "诊所来了一个不会醒的病人。",
+        "content": [
+          "清晨六点，回梦诊所门口停着一辆没有牌照的黑车。",
+          "车里的人睡得很沉，手腕上却写着林栖的名字。",
+          "顾停云把白大褂扣到最后一颗，抬头看她：‘你昨晚梦见他了吗？’",
+          "林栖没有回答。她的掌心还留着梦里那把刀的触感。"
+        ]
+      },
+      {
+        "id": "chapter-2",
+        "title": "第2章 失眠村",
+        "date": "2026-06-02",
+        "file": "chapters/huimeng/chapter-2.html",
+        "access": "free",
+        "summary": "村里开始集体失眠。",
+        "content": [
+          "从第二天起，村里没人再睡得着。",
+          "每个人都说自己听见了同一段铃声，像从很深的井底传上来。",
+          "林栖站在广播室门口，发现门锁被人从里面打开。",
+          "顾停云说：‘有人想把梦放出来。’"
+        ]
+      },
+      {
+        "id": "chapter-3",
+        "title": "第3章 井底铃声",
+        "date": "2026-06-03",
+        "file": "chapters/huimeng/chapter-3.html",
+        "access": "order",
+        "summary": "后续章节可通过社交入口联系。"
+      }
+    ]
+  },
+  {
+    "id": "yuese",
+    "title": "月色病人",
+    "subtitle": "他是病例，也是唯一的证词。",
+    "authorId": "author-3",
+    "authorName": "弯月",
+    "category": "耽美",
+    "status": "连载中",
+    "updatedAt": "2026-06-04",
+    "featured": true,
+    "cover": "assets/images/covers/yuese-cover.svg",
+    "banner": "assets/images/banners/yuese-banner.svg",
+    "tags": [
+      "bl",
+      "modern",
+      "suspense"
+    ],
+    "intro": "心理医生收治了一位只在月光下说真话的病人。病例越写越厚，医生却发现自己的名字早已出现在对方的旧档案里。",
+    "heroine": "受 / 记录者：理性克制的心理医生，习惯用专业距离保护自己。",
+    "hero": "攻 / 病人：温和、脆弱、危险，像一枚被月光浸湿的陷阱。",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "第1章 月光门诊",
+        "date": "2026-06-04",
+        "file": "chapters/yuese/chapter-1.html",
+        "access": "free",
+        "summary": "病人只在月光下开口。",
+        "content": [
+          "夜间门诊只留了一盏灯。",
+          "病人坐在窗边，月光落在他的袖口上，他终于说了第一句话。",
+          "‘医生，我们以前见过。’",
+          "程越翻开病历，发现入院时间被人改过。"
+        ]
+      },
+      {
+        "id": "chapter-2",
+        "title": "第2章 空白病历",
+        "date": "2026-06-05",
+        "file": "chapters/yuese/chapter-2.html",
+        "access": "free",
+        "summary": "档案里出现了不该存在的名字。",
+        "content": [
+          "病历的第三页是空白。",
+          "程越用灯照过去，纸背却慢慢浮出一行浅色的字。",
+          "那是他的签名。",
+          "病人抬起眼，轻声问：‘你终于想起来了吗？’"
+        ]
+      },
+      {
+        "id": "chapter-3",
+        "title": "第3章 旧档案",
+        "date": "2026-06-06",
+        "file": "chapters/yuese/chapter-3.html",
+        "access": "order",
+        "summary": "后续章节可通过社交入口联系。"
+      }
+    ]
+  }
+]

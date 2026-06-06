@@ -1,0 +1,208 @@
+[
+  {
+    "novelId": "liuan",
+    "novelTitle": "柳安",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "第1章 雨夜旧信",
+        "date": "2026-06-06",
+        "file": "chapters/liuan/chapter-1.html",
+        "access": "free",
+        "summary": "柳安在雨夜收到一封旧信。"
+      },
+      {
+        "id": "chapter-2",
+        "title": "第2章 沈泊舟",
+        "date": "2026-06-07",
+        "file": "chapters/liuan/chapter-2.html",
+        "access": "free",
+        "summary": "她再次见到沈泊舟。"
+      },
+      {
+        "id": "chapter-3",
+        "title": "第3章 黑色录音",
+        "date": "2026-06-08",
+        "file": "chapters/liuan/chapter-3.html",
+        "access": "order",
+        "summary": "后续章节可通过社交入口联系。"
+      }
+    ]
+  },
+  {
+    "novelId": "fanzuoyong",
+    "novelTitle": "反作用定律",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "第1章 镜头之外",
+        "date": "2026-06-05",
+        "file": "chapters/fanzuoyong/chapter-1.html",
+        "access": "free",
+        "summary": "镜头关闭后，她接到他的电话。"
+      },
+      {
+        "id": "chapter-2",
+        "title": "第2章 危机公关",
+        "date": "2026-06-06",
+        "file": "chapters/fanzuoyong/chapter-2.html",
+        "access": "free",
+        "summary": "一条热搜把两个人推到台前。"
+      },
+      {
+        "id": "chapter-3",
+        "title": "第3章 未公开关系",
+        "date": "2026-06-07",
+        "file": "chapters/fanzuoyong/chapter-3.html",
+        "access": "order",
+        "summary": "后续章节可通过社交入口联系。"
+      }
+    ]
+  },
+  {
+    "novelId": "huimeng",
+    "novelTitle": "回梦诊所",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "第1章 梦里来客",
+        "date": "2026-06-01",
+        "file": "chapters/huimeng/chapter-1.html",
+        "access": "free",
+        "summary": "诊所来了一个不会醒的病人。"
+      },
+      {
+        "id": "chapter-2",
+        "title": "第2章 失眠村",
+        "date": "2026-06-02",
+        "file": "chapters/huimeng/chapter-2.html",
+        "access": "free",
+        "summary": "村里开始集体失眠。"
+      },
+      {
+        "id": "chapter-3",
+        "title": "第3章 井底铃声",
+        "date": "2026-06-03",
+        "file": "chapters/huimeng/chapter-3.html",
+        "access": "order",
+        "summary": "后续章节可通过社交入口联系。"
+      }
+    ]
+  },
+  {
+    "novelId": "yuese",
+    "novelTitle": "月色病人",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "第1章 月光门诊",
+        "date": "2026-06-04",
+        "file": "chapters/yuese/chapter-1.html",
+        "access": "free",
+        "summary": "病人只在月光下开口。"
+      },
+      {
+        "id": "chapter-2",
+        "title": "第2章 空白病历",
+        "date": "2026-06-05",
+        "file": "chapters/yuese/chapter-2.html",
+        "access": "free",
+        "summary": "档案里出现了不该存在的名字。"
+      },
+      {
+        "id": "chapter-3",
+        "title": "第3章 旧档案",
+        "date": "2026-06-06",
+        "file": "chapters/yuese/chapter-3.html",
+        "access": "order",
+        "summary": "后续章节可通过社交入口联系。"
+      }
+    ]
+  },
+  {
+    "novelId": "hunting-swallow",
+    "novelTitle": "猎捕燕子",
+    "chapters": [
+      {
+        "id": "chapter-1",
+        "title": "第一话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-1.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。"
+      },
+      {
+        "id": "chapter-2",
+        "title": "第二话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-2.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。"
+      },
+      {
+        "id": "chapter-3",
+        "title": "第三话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-3.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。"
+      },
+      {
+        "id": "chapter-4",
+        "title": "第四话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-4.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。"
+      },
+      {
+        "id": "chapter-5",
+        "title": "第五话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-5.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。"
+      },
+      {
+        "id": "chapter-6",
+        "title": "第六章",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-6.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。"
+      },
+      {
+        "id": "chapter-7",
+        "title": "第七章",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-7.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。"
+      },
+      {
+        "id": "chapter-8",
+        "title": "第8话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-8.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。"
+      },
+      {
+        "id": "chapter-9",
+        "title": "第9话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-9.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。"
+      },
+      {
+        "id": "chapter-10",
+        "title": "第10话",
+        "date": "2026-05-26",
+        "file": "chapters/hunting-swallow/chapter-10.html",
+        "access": "free",
+        "summary": "《猎捕燕子》免费试读章节。"
+      }
+    ]
+  }
+]

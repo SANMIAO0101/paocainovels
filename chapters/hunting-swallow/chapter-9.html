@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-CN" id="top">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>猎捕燕子 第9话｜泡菜小说坊</title>
+
+  <link rel="icon" href="../../assets/images/logo/logo.png">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/chapter.css">
+  <link rel="stylesheet" href="../../assets/css/mobile.css">
+
+  <style>
+
+    :root {
+      --bg: #f6f0e5;
+      --paper: #fffaf0;
+      --sage: #7f9368;
+      --sage-dark: #5f754b;
+      --purple: #dcd5ee;
+      --pink: #f1d3d7;
+      --text: #3f3a32;
+      --muted: #8a8175;
+      --line: #eadfce;
+      --warm: #cf9264;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(220, 213, 238, 0.45), transparent 35%),
+        radial-gradient(circle at top right, rgba(241, 211, 215, 0.45), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      font-family: "Noto Serif SC", "Songti SC", "Microsoft YaHei", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    a { transition: all 0.2s ease; }
+
+    .reader-wrap {
+      width: min(900px, 92%);
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 250, 240, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--sage-dark);
+      font-weight: 800;
+      font-size: 22px;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 14px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a,
+    .nav-links button {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--sage-dark);
+      padding: 9px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(95, 117, 75, 0.08);
+      font-family: inherit;
+    }
+
+    .nav-links a:hover,
+    .nav-links button:hover {
+      background: var(--sage);
+      color: #fff;
+      border-color: var(--sage);
+    }
+
+    .chapter-head {
+      margin-top: 36px;
+      text-align: center;
+      background: rgba(255, 250, 240, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 14px 34px rgba(95, 117, 75, 0.08);
+    }
+
+    .chapter-head h1 {
+      margin: 0 0 10px;
+      color: var(--sage-dark);
+      font-size: clamp(30px, 5vw, 42px);
+      letter-spacing: 0.06em;
+    }
+
+    .chapter-head p {
+      margin: 6px 0;
+      color: var(--muted);
+    }
+
+    .quick-actions {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      font-size: 15px;
+      background: var(--paper);
+      color: var(--sage-dark);
+      font-family: inherit;
+    }
+
+    .btn:hover {
+      background: var(--purple);
+      color: var(--sage-dark);
+    }
+
+    .btn-primary {
+      background: var(--sage);
+      color: #fff;
+      border-color: var(--sage);
+      box-shadow: 0 10px 22px rgba(127, 147, 104, 0.22);
+    }
+
+    .btn-primary:hover {
+      background: var(--sage-dark);
+      color: #fff;
+      border-color: var(--sage-dark);
+    }
+
+    .reader-paper {
+      margin-top: 28px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: clamp(24px, 5vw, 52px);
+      line-height: 2.15;
+      font-size: 18px;
+      box-shadow: 0 16px 36px rgba(95, 117, 75, 0.08);
+    }
+
+    .reader-paper p {
+      margin: 0 0 1.35em;
+      text-indent: 2em;
+    }
+
+    .reader-paper blockquote {
+      margin: 1.6em 0;
+      padding: 18px 22px;
+      border-left: 5px solid var(--sage);
+      background: rgba(220, 213, 238, 0.26);
+      border-radius: 18px;
+      color: #53483f;
+      line-height: 2;
+    }
+
+    .reader-paper hr {
+      border: none;
+      border-top: 1px dashed var(--line);
+      margin: 2em 0;
+    }
+
+    .reader-paper strong {
+      color: var(--warm);
+      font-weight: 800;
+    }
+
+    .chapter-nav {
+      margin: 34px 0 28px;
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .social-section,
+    .recommend-section {
+      margin-top: 28px;
+      background: rgba(255, 250, 240, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 26px;
+      box-shadow: 0 14px 34px rgba(95, 117, 75, 0.08);
+    }
+
+    .social-section h2,
+    .recommend-section h2 {
+      margin: 0 0 10px;
+      color: var(--sage-dark);
+    }
+
+    .social-section p,
+    .recommend-section p {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .social-links {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .recommend-slider {
+      overflow: hidden;
+      position: relative;
+      margin-top: 18px;
+      border-radius: 24px;
+    }
+
+    .recommend-track {
+      display: flex;
+      gap: 18px;
+      width: max-content;
+      animation: recommendScroll 34s linear infinite;
+    }
+
+    .recommend-slider:hover .recommend-track {
+      animation-play-state: paused;
+    }
+
+    .recommend-card {
+      width: 165px;
+      flex: 0 0 auto;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 12px;
+      box-shadow: 0 10px 24px rgba(95, 117, 75, 0.1);
+    }
+
+    .recommend-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--sage);
+    }
+
+    .recommend-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 16px;
+      display: block;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+    }
+
+    .recommend-card strong {
+      display: block;
+      margin-top: 10px;
+      color: var(--sage-dark);
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .recommend-card span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .recommend-control {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .recommend-control button {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--sage-dark);
+      border-radius: 999px;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .recommend-control button:hover {
+      background: var(--sage);
+      color: #fff;
+    }
+
+    @keyframes recommendScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: rgba(255, 250, 240, 0.75);
+      padding: 26px 0;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    body.dark-mode {
+      --bg: #252820;
+      --paper: #31362b;
+      --text: #f2eadf;
+      --muted: #c9beaf;
+      --line: rgba(255,255,255,0.12);
+      background: #252820;
+      color: var(--text);
+    }
+
+    body.dark-mode .site-header,
+    body.dark-mode .chapter-head,
+    body.dark-mode .reader-paper,
+    body.dark-mode .social-section,
+    body.dark-mode .recommend-section,
+    body.dark-mode .site-footer,
+    body.dark-mode .nav-links a,
+    body.dark-mode .nav-links button,
+    body.dark-mode .btn,
+    body.dark-mode .recommend-card,
+    body.dark-mode .recommend-control button {
+      background: #31362b;
+      color: var(--text);
+      border-color: rgba(255,255,255,0.12);
+    }
+
+    body.dark-mode .btn-primary {
+      background: var(--sage);
+      color: #fff;
+    }
+
+    body.dark-mode .reader-paper blockquote {
+      background: rgba(220, 213, 238, 0.12);
+      color: var(--text);
+    }
+
+    @media (max-width: 720px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
+      .reader-paper {
+        font-size: 17px;
+        line-height: 2.05;
+      }
+
+      .chapter-nav {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .recommend-card {
+        width: 145px;
+      }
+
+      .recommend-card img {
+        height: 195px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../../index.html">
+        <img src="../../assets/images/logo/logo.png" alt="泡菜小说坊 Logo">
+        <span>泡菜小说坊</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../stories.html">Stories</a>
+        <a href="../../search.html">搜索</a>
+        <button type="button" id="themeToggle">夜间模式</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-wrap">
+
+    <section class="chapter-head">
+      <h1>第9话</h1>
+      <p>《猎捕燕子》</p>
+      <p>作者：Whale</p>
+
+      <div class="quick-actions">
+        <a class="btn" href="#bottom">返回底部</a>
+        <a class="btn" href="../../novels/hunting-swallow.html">目录</a>
+        <a class="btn" href="chapter-8.html">上一页</a>
+        <a class="btn btn-primary" href="chapter-10.html">下一页</a>
+      </div>
+    </section>
+
+    <article class="reader-paper">
+      <p>“河镇啊。”</p>
+
+      <p>“真的不行的……”</p>
+
+      <p>车海俊说这话时的底气越来越不足，语调也渐渐弱了下去。要是约翰在旁边看到这一幕，肯定会扯着嗓子大骂他一句“你这个绝世大蠢货”。</p>
+
+      <p>可他这也是没办法啊。车海俊对女人向来心软。确切地说，是对女人的眼泪毫无抵抗力。</p>
+
+      <p>或许是由于父亲殴打母亲的画面深深烙印在了潜意识里，又或者是看到约翰的奶奶被拆迁流氓羞辱时痛哭的场景卡在了大脑的某个角落，总之，他只要一看到可怜的女人，整颗心就会彻底软下来。他甚至开始在心里自我安慰：与其让这些弱小可怜的女人受苦，倒不如让自己这个皮糙肉厚的大老爷们用身体去扛。</p>
+
+      <p>“求你了……”</p>
+
+      <p>但不行就是不行。如果这次再妥协，那可就彻底完蛋了。一想到那个男人找上店里时对自己做出的残暴行径，以及从那人身上散发出来的危险气息，他就忍不住打冷战。</p>
+
+      <p>车海俊猛地攥紧拳头，试图稳住自己动摇的心，可一看到女人眼里啪嗒啪嗒掉落的泪珠，他好不容易筑起的防线瞬间土崩瓦解。最终，他的舌尖还是不听使唤地动了。</p>
+
+      <p>“……那，就只帮这一次。”</p>
+
+      <p>他仿佛产生了幻听，耳边响起了约翰啧啧咂嘴的嫌弃声。他甚至能脑补出约翰正揪着他的领口疯狂摇晃的画面，骂他这种性格根本不适合在这一行混，平时看起来精明得像只猴，结果一到关键时刻就被那点该死的人情味牵着鼻子走，简直是个缺心眼。</p>
+
+      <p>但又能怎么办呢？他实在无法做到冷眼旁观，把一个如果不去帮忙就会陷入困境的女人狠心推开。搞了半天，原来真正的终极冤大头竟然是他车海俊自己。</p>
+
+      <p>目的达到的韩英华立刻从包里掏出手帕，优雅地粘了粘眼角的泪水。刚才那副把人的心肝都要揉碎的哀怨表情瞬间消失得无影无踪。她扬起下巴，恢复了往日那副冰冷孤高的姿态，居高临下地看着车海俊。</p>
+
+      <p>“那我就去安排见面的地方了。你到时候一定要来。要是敢不来，我可就去跟你们老板说了。”</p>
+
+      <p>“跟老板？不是，您打算跟我们老板说什么啊……”</p>
+
+      <p>“就说你河镇卷了店里的预支款想跑路。”</p>
+
+      <p>“我什么时候干过这事儿了！”</p>
+
+      <p>车海俊惊得目瞪口呆。虽然他以前确实动过这种念头，但他很快就打消了想法，现在明明在老老实实、勤勤恳恳地工作好吗？自己甚至为了让那根已经死透的阳具重新抬头，特意跑了一趟医院呢。</p>
+
+      <p>车海俊急忙拽住她的衣角辩解，说自己绝对没有那种想法，但韩英华却根本不听。她温柔地握住车海俊的手背，随后毫不留情地将他的手给拨开了。</p>
+
+      <p>“具体的时间和地点我会发短信给你。到时候该怎么做，你心里有数吧？”</p>
+
+      <p>“不是，英华姐。您等一下。等一下……！”</p>
+
+      <p>“要是敢说半个不字，你就把底下的家伙切了吧。”</p>
+
+      <p>韩英华优雅地整理了一下裙摆，随后踩着高跟鞋走出了包间。车海俊急急忙忙地追了出去，可那女人哪怕穿着恨天高，走路竟然也快得像一阵风，转眼间就已经走到了收银台前。老板见她要走，赶忙哈腰点头地赔笑，韩英华则顺手从钱包里掏出一大叠钞票拍在了前台上。</p>
+
+      <p>“哎哟，英华姐。怎么不多玩会儿再走啊。”</p>
+
+      <p>“突然有点急事。”</p>
+
+      <p>韩英华越过肩膀，意味深长地瞥了一眼站在身后的车海俊。随后，她将手掌挡在脸颊旁，用只有车海俊能看到的口型无声地动了动嘴唇。虽然没有发出声音，但车海俊一眼就认出了那三个字——“预、支、款”。而一旁的老板此时正忙着清点那沓厚厚的钞票，压根没注意韩英华的嘴唇是怎么动的。</p>
+
+      <p>韩英华离开后，车海俊虚脱地顺着墙壁滑坐到了地上。他的脸色一片蜡黄。一种熟悉的“完蛋了”的绝望感猛烈地冲击着他的后脑勺。老板有些纳闷，伸长了脖子越过前台朝车海俊看过来。</p>
+
+      <p>“你小子怎么了？吃亏了？”</p>
+
+      <p>看着老板那张紧盯着自己的脸，车海俊的脑海里不由得浮现出了那个传闻中被砍掉脚踝的丹尼尔。那说不定就是自己的未来。</p>
+
+      <p>就算自己拼命解释，说自己绝对没有卷预支款跑路的意图，老板会信吗？老板平时最爱挂在嘴边的一句话就是：“无论是出来卖的还是雇来的，只要是带把儿的畜生，就绝对一个字都不能信。”平时只要一喝酒，老板就会像唱流行歌一样，一遍遍盘点以前干这行时卷着他的钱跑路的白眼狼们——什么赵民植啊、林九英啊、张泰庆啊等等。</p>
+
+      <p>“……没……没事……”</p>
+
+      <p>“没事你瘫在那儿干嘛？”</p>
+
+      <p>“就是突然有点脱力。”</p>
+
+      <p>“年纪轻轻的就这么虚。想当年我一天赶五个场子，第二天照样大清早爬起来上班。还不快给我打起精神来？赶紧去洗把脸，然后给我回休息室待命！”</p>
+
+      <p>伴随着老板雷霆般的怒吼，车海俊吓得“噌”地一下从地上站了起来。他听从老板的话，走进洗手间用冷水洗了把脸。然而抬头看向镜子时，里面映出的那张脸却是一片惨白，简直跟死人没什么两样。</p>
+
+      <p>“就算天塌下来……我操！”</p>
+
+      <p>什么座右铭，什么心理建设，现在全都不顶用了。还说什么车到山前必有路，天要是真塌下来，大家全都得被活活砸死。</p>
+
+      <p>“妈的……”</p>
+
+      <p>他是真的不想再见到那个男人了。哪怕是偶然间扯上关系他都嫌晦气。自己好歹也当了这么多年少爷，结果居然因为拒绝不了一个女人的请求，就这么心甘情愿地自己跳进了火坑，全天下再找不出比他更蠢的蠢货了。</p>
+
+      <p>车海俊有气无力地咒骂着，随后一头扎进了洗脸池蓄满的冷水里。他在水里张开嘴，用尽全身的力气疯狂地咆哮、痛骂着。然而水面上除了咕嘟咕嘟冒出一连串气泡之外，什么声音也没传出来。</p>
+
+      <hr>
+
+      <p>听完事情的始末后，约翰果不其然再次毫无同情心地哈哈大笑起来。这家伙，估计就算哪天朋友被活埋了，他也不会担心，只会觉得好笑到把肚皮给笑破。</p>
+
+      <p>“所以说你干嘛要答应她啊。”</p>
+
+      <p>“不是，当时她那副样子，谁看了都拒绝不了啊！哭得那么可怜……”</p>
+
+      <p>“你连自己的屁股都还没擦干净呢，还有心思去帮别人。”</p>
+
+      <p>这句吐槽可以说是相当一针见血了。车海俊感觉自己的骨头都被这句话给戳痛了，揉了揉手臂没吭声。约翰则趁着这个空档，拿着筷子把锅里剩下的拉面捞了个精光。</p>
+
+      <p>“要是实在不想去，就把约给推了呗。至于预支款那事，反正你又没真的跑路，她拿这招威胁你管用吗？她手里肯定连证据都没有。”</p>
+
+      <p>“要是换作英华姐，就算没有证据，她也能凭空造一个出来。”</p>
+
+      <p>韩英华绝对能干出这种事。证人这种东西，只要砸点钱不就大把的人排着队来当吗。</p>
+
+      <p>“那你就闭着眼睛去一趟呗。反正又不是让你代替她去死，不就是过去帮着说两句话吗。能有多严重，至于把你愁成这样。”</p>
+
+      <p>“那是你没见过那个男人。我跟你说，他真的是个黑社会，地地道道的。身上有一股血腥味。”</p>
+
+      <p>别人可能察觉不到，但车海俊可以。那个男人的身上散发着一种无论如何也掩盖不住的血腥气。那种味道是浸透进掌纹、皮肤的褶皱以及血肉深处的，不管喷多少香水都洗不掉。他从小到大跟债主、高利贷贩子打交道，高中毕业后又接触过倒卖人体器官的亡命之徒，所以对这种气息再熟悉不过了。那不是靠鼻子闻出来的，而是靠直觉嗅出来的。</p>
+
+      <p>还有他的眼神。虽然长了一张不输给当红男演员的帅脸，但那双眼睛里闪烁的光芒，却冷酷得像马场洞屠宰场里那种连肉带骨头一并锯断的锋利锯条。</p>
+
+      <p>“你当自己是鲨鱼啊，还能闻到血腥味。”</p>
+
+      <p>“我说认真的。”</p>
+
+      <p>车海俊煞有介事地用力点了点头。虽然他也不确定那人的底细，但那家伙绝对比他这辈子见过的任何一个人都要危险。</p>
+
+      <p>“可你现在也没地方躲啊。”</p>
+
+      <p>“确实。”</p>
+
+      <p>“那就只能硬着头皮上了。”</p>
+
+      <p>其实答案大家心知肚明。车海俊抓狂地揪着自己的头发，嘴里发出“啊啊啊”的惨叫。约翰则是一脸嫌弃，嘟囔着这家伙怎么又开始了。</p>
+
+      <p>“放心吧。你要是真死了，分红和分期付款的钱我一定会多烧点给你的。”</p>
+
+      <p>“到时候估计连尸体都找不到，烧那些有什么用。”</p>
+
+      <p>“那我帮你报个失踪。”</p>
+
+      <p>“真是感天动地的兄弟情啊，你个狗杂种……”</p>
+
+      <p>约翰收拾好碗筷放进了水槽里。车海俊不请自来跑到别人家里把人家的拉面吃了个精光，这时候自然也不好意思坐着吃白食，便主动提出要洗碗。不过约翰却嫌弃他毛手毛脚，说“让你洗碗非得把盘子全砸了不可”，直接把他轰到了一边。</p>
+
+      <p>“行了，别太担心。就算那家伙再怎么不讲道理，应该也不会一上来就把你怎么样。”</p>
+
+      <p>这算是什么打一巴掌给个甜枣。但哪怕约翰递过来的是一碗白开水，此时溺水的车海俊也只想死死抓住。他用屁股在地上挪动着，蹭到约翰脚边，把背靠在了他的腿上。</p>
+
+      <p>“我应该死不了吧？”</p>
+
+      <p>“活到现在都没死，你还瞎担心什么。你的生命力比蟑螂还顽强。”</p>
+
+      <p>“你竟然能说出这么恶毒的话。”</p>
+
+      <p>“我这是在夸你。”</p>
+
+      <p>就在两人有一搭没一搭地闲聊时，一阵刺耳的手机铃声突然响起，打断了他们的对话。是车海俊的手机。伴随着一股不祥的预感，他磨磨蹭蹭地拿起手机看了一眼。果然是韩英华发来的短信。</p>
+
+      <p>“是英华姐。”</p>
+
+      <p>“发了什么？我看看。”</p>
+
+      <p>约翰摘掉橡胶手套，把脑袋凑了过来。短信里写着具体的见面时间和地点。</p>
+
+      <blockquote>【到了之后，就说你和李姜周代表有预约。我相信剩下的事情河镇你一定会处理得很好。】</blockquote>
+
+      <p>言简意赅，但字里行间全都是赤裸裸的威胁。</p>
+
+      <p>约翰用自己的手机搜索了一下那个地址。实景地图上显示的是一栋看起来非常气派且正规的大楼。那地方并不是什么适合杀人埋尸的荒郊野岭，而是繁华的大马路边，而且附近不远处就开着一家连锁咖啡厅。</p>
+
+      <p>“他总不至于在那种地方杀人吧。”</p>
+
+      <p>听了约翰的话，车海俊这才暗暗松了一口气。看来自己确实是有些一惊一乍了，大概是因为从那个男人身上闻到了和以前虐待过自己的那些恶棍相似的味道，所以才自己吓自己。只要过去用最快的速度向那个男人解释清楚，说明自己和韩英华清清白白没有任何瓜葛，然后立刻离开那栋大楼，任务就算完成了。</p>
+
+      <p>这不是很简单嘛。车海俊在心里强行给自己鼓劲。</p>
+    </article>
+
+    <div class="chapter-nav" id="bottom">
+      <a class="btn" href="chapter-8.html">← 上一页：第8章</a>
+      <a class="btn" href="#top">返回顶部</a>
+      <a class="btn" href="../../novels/hunting-swallow.html">目录</a>
+      <a class="btn btn-primary" href="chapter-10.html">下一页：第10章 →</a>
+    </div>
+
+    <section class="social-section" id="social">
+      <h2>继续阅读</h2>
+      <p>前十章可免费阅读。后续章节可通过以下入口添加账号咨询。</p>
+
+      <div class="social-links">
+        <a class="btn" href="https://weibo.com/" target="_blank" rel="noopener">微博</a>
+        <a class="btn" href="../../assets/images/icons/wechat-qr.svg" target="_blank" rel="noopener">微信</a>
+        <a class="btn" href="https://www.xiaohongshu.com/" target="_blank" rel="noopener">小红书</a>
+      </div>
+    </section>
+
+
+    <section class="recommend-section" id="similar-novels">
+      <h2>同类型小说推荐</h2>
+      <p>喜欢《猎捕燕子》的话，也可以继续浏览这些现代、悬疑、暗黑拉扯类型作品。</p>
+
+      <div class="recommend-slider">
+        <div class="recommend-track" id="recommendTrack">
+          <a class="recommend-card" href="../../novels/liuan.html">
+            <img src="../../assets/images/covers/liuan-cover.svg" alt="柳安封面">
+            <strong>柳安</strong>
+            <span>现代 · 悬疑 · 爱情</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/fanzuoyong.html">
+            <img src="../../assets/images/covers/fanzuoyong-cover.svg" alt="反作用定律封面">
+            <strong>反作用定律</strong>
+            <span>现代 · 拉扯 · 女频</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/huimeng.html">
+            <img src="../../assets/images/covers/huimeng-cover.svg" alt="灰梦封面">
+            <strong>灰梦</strong>
+            <span>悬疑 · 都市 · 秘密</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/yuese.html">
+            <img src="../../assets/images/covers/yuese-cover.svg" alt="月色陷阱封面">
+            <strong>月色陷阱</strong>
+            <span>暗黑 · 爱情 · 追逐</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/hunting-swallow.html">
+            <img src="../../assets/images/covers/hunting-swallow.png" alt="猎捕燕子封面">
+            <strong>猎捕燕子</strong>
+            <span>耽美 · 现代 · 暗黑</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/liuan.html">
+            <img src="../../assets/images/covers/liuan-cover.svg" alt="柳安封面">
+            <strong>柳安</strong>
+            <span>现代 · 悬疑 · 爱情</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/fanzuoyong.html">
+            <img src="../../assets/images/covers/fanzuoyong-cover.svg" alt="反作用定律封面">
+            <strong>反作用定律</strong>
+            <span>现代 · 拉扯 · 女频</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/huimeng.html">
+            <img src="../../assets/images/covers/huimeng-cover.svg" alt="灰梦封面">
+            <strong>灰梦</strong>
+            <span>悬疑 · 都市 · 秘密</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/yuese.html">
+            <img src="../../assets/images/covers/yuese-cover.svg" alt="月色陷阱封面">
+            <strong>月色陷阱</strong>
+            <span>暗黑 · 爱情 · 追逐</span>
+          </a>
+
+          <a class="recommend-card" href="../../novels/hunting-swallow.html">
+            <img src="../../assets/images/covers/hunting-swallow.png" alt="猎捕燕子封面">
+            <strong>猎捕燕子</strong>
+            <span>耽美 · 现代 · 暗黑</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="recommend-control">
+        <button type="button" id="recommendPrev">← 向左滑动</button>
+        <button type="button" id="recommendNext">向右滑动 →</button>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 泡菜小说坊 Paocai Novels</p>
+    <p>免费试读 · 社交入口咨询 · 长篇阅读收藏</p>
+  </footer>
+
+
+  <script>
+    const themeToggle = document.getElementById("themeToggle");
+
+    if (themeToggle) {
+      const savedTheme = localStorage.getItem("paocai-theme");
+      if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        themeToggle.textContent = "日间模式";
+      }
+
+      themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          localStorage.setItem("paocai-theme", "dark");
+          themeToggle.textContent = "日间模式";
+        } else {
+          localStorage.setItem("paocai-theme", "light");
+          themeToggle.textContent = "夜间模式";
+        }
+      });
+    }
+
+    const recommendTrack = document.getElementById("recommendTrack");
+    const recommendPrev = document.getElementById("recommendPrev");
+    const recommendNext = document.getElementById("recommendNext");
+
+    if (recommendTrack && recommendPrev && recommendNext) {
+      recommendPrev.addEventListener("click", function () {
+        recommendTrack.style.animation = "none";
+        recommendTrack.scrollBy({ left: -220, behavior: "smooth" });
+      });
+
+      recommendNext.addEventListener("click", function () {
+        recommendTrack.style.animation = "none";
+        recommendTrack.scrollBy({ left: 220, behavior: "smooth" });
+      });
+    }
+  </script>
+
+
+</body>
+</html>
