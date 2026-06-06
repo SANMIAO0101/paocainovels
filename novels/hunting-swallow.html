@@ -318,7 +318,6 @@
       border-color: var(--sage);
     }
 
-
     /* 同类型小说推荐：横向滑动循环 */
     .recommend-intro {
       margin: -4px 0 18px;
@@ -422,12 +421,6 @@
       color: #fff;
     }
 
-    body.dark-mode .recommend-card,
-    body.dark-mode .recommend-control button {
-      background: #31362b;
-      color: var(--text);
-    }
-
     .page-nav {
       margin: 34px 0 56px;
       display: flex;
@@ -444,6 +437,7 @@
       text-align: center;
     }
 
+    /* 夜间模式 */
     body.dark-mode {
       --bg: #252820;
       --paper: #31362b;
@@ -467,9 +461,55 @@
     body.dark-mode .btn-soft,
     body.dark-mode .social-card,
     body.dark-mode .nav-links a,
-    body.dark-mode .nav-links button {
+    body.dark-mode .nav-links button,
+    body.dark-mode .recommend-card,
+    body.dark-mode .recommend-control button {
       background: #31362b;
       color: var(--text);
+    }
+
+    /* 修复夜间模式下主角介绍、简介、社交入口、推荐区文字过暗 */
+    body.dark-mode .character-card p,
+    body.dark-mode .summary-card p,
+    body.dark-mode .section p,
+    body.dark-mode .recommend-intro,
+    body.dark-mode .social-card span,
+    body.dark-mode .recommend-card span,
+    body.dark-mode .chapter-list small {
+      color: #e6ddcf;
+    }
+
+    body.dark-mode .character-card h3 {
+      color: #f0b27a;
+    }
+
+    body.dark-mode .section h2,
+    body.dark-mode .social-card strong,
+    body.dark-mode .recommend-card strong {
+      color: #b8c8a4;
+    }
+
+    body.dark-mode .novel-info h1,
+    body.dark-mode .brand {
+      color: #b8c8a4;
+    }
+
+    body.dark-mode .tags a,
+    body.dark-mode .meta span {
+      background: rgba(220, 213, 238, 0.12);
+      color: #e6ddcf;
+      border-color: rgba(255,255,255,0.12);
+    }
+
+    body.dark-mode .btn-primary {
+      background: #7f9368;
+      color: #fff;
+    }
+
+    body.dark-mode .btn-soft:hover,
+    body.dark-mode .recommend-control button:hover {
+      background: #7f9368;
+      color: #fff;
     }
 
     @media (max-width: 820px) {
@@ -687,7 +727,6 @@
       </div>
     </section>
 
-
     <!-- 同类型小说推荐 -->
     <section class="section" id="similar-novels">
       <h2>同类型小说推荐</h2>
@@ -810,7 +849,6 @@
     const recommendNext = document.getElementById("recommendNext");
 
     if (recommendSlider && recommendPrev && recommendNext) {
-      let recommendTimer = null;
       let isPaused = false;
 
       function getHalfScrollWidth() {
@@ -827,7 +865,7 @@
         }
       }
 
-      recommendTimer = window.setInterval(loopRecommend, 28);
+      window.setInterval(loopRecommend, 28);
 
       recommendSlider.addEventListener("mouseenter", function () {
         isPaused = true;
@@ -839,6 +877,7 @@
 
       recommendPrev.addEventListener("click", function () {
         isPaused = true;
+
         recommendSlider.scrollBy({
           left: -220,
           behavior: "smooth"
@@ -851,6 +890,7 @@
 
       recommendNext.addEventListener("click", function () {
         isPaused = true;
+
         recommendSlider.scrollBy({
           left: 220,
           behavior: "smooth"
@@ -865,7 +905,6 @@
         }, 1200);
       });
     }
-
   </script>
 
 </body>
