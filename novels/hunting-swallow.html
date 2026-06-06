@@ -598,7 +598,7 @@
     </section>
 
     <section class="section" id="social">
-      <h2>账号咨询</h2>
+      <h2>社交入口</h2>
       <p>前期章节可免费阅读，后续章节可通过以下账号添加咨询。</p>
       <div class="social-grid" id="socialGrid"></div>
     </section>
@@ -627,7 +627,7 @@
   <footer class="site-footer">
     <div class="page-wrap">
       <p>© 泡菜小说坊 Paocai Novels</p>
-      <p>免费试读 · 账号咨询 · 长篇阅读收藏</p>
+      <p>免费试读 · 社交入口咨询 · 长篇阅读收藏</p>
     </div>
   </footer>
 
@@ -637,16 +637,26 @@
       小说详情页信息填写区
       ==================================================
 
-      下次新增小说时，只需要复制本文件，然后修改 novelData。
-      作者按钮通过 authorLink 跳转到作者主页。
+      新增小说时，只需要修改 novelData。
+      作者、分类、状态都已经是有效按钮。
+
+      authorLink：作者主页
+      categoryLink：分类页
+      statusLink：状态页
     */
 
     const novelData = {
       title: "猎捕燕子",
+
       author: "Whale",
       authorLink: "../authors/whale.html",
-      category: "耽美",
+
+      category: "BL",
+      categoryLink: "../tags/bl.html",
+
       status: "连载中",
+      statusLink: "../status/ongoing.html",
+
       updateDate: "2026-05-26",
       cover: "../assets/images/covers/hunting-swallow.png",
 
@@ -770,8 +780,8 @@
 
       document.getElementById("novelMeta").innerHTML = `
         <a href="${data.authorLink}">作者：${escapeHTML(data.author)}</a>
-        <span>分类：${escapeHTML(data.category)}</span>
-        <span>状态：${escapeHTML(data.status)}</span>
+        <a href="${data.categoryLink}">分类：${escapeHTML(data.category)}</a>
+        <a href="${data.statusLink}">状态：${escapeHTML(data.status)}</a>
         <span>更新：${escapeHTML(data.updateDate)}</span>
       `;
 
