@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>小说详情｜泡菜小说坊</title>
 
-  <!-- 当前文件放在 novels 文件夹里，所以路径前面要加 ../ -->
+  <title>猎捕燕子｜泡菜小说坊</title>
+
+  <!-- 因为这个文件在 novels 文件夹里，所以路径前面要加 ../ -->
   <link rel="icon" href="../assets/images/logo/logo.png">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/novel.css">
@@ -25,18 +26,12 @@
       --warm: #cf9264;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      margin: 0;
       background:
         radial-gradient(circle at top left, rgba(220, 213, 238, 0.55), transparent 35%),
         radial-gradient(circle at top right, rgba(241, 211, 215, 0.55), transparent 30%),
         var(--bg);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
     }
 
     .page-wrap {
@@ -153,15 +148,11 @@
       border: 1px solid rgba(127, 147, 104, 0.18);
       padding: 7px 12px;
       border-radius: 999px;
-      color: var(--sage-dark);
-      text-decoration: none;
-      font-size: 14px;
     }
 
-    .meta a:hover {
-      background: var(--sage);
-      color: #fff;
-    }
+    .meta a { text-decoration: none; color: var(--sage-dark); }
+
+    .meta a:hover { background: var(--sage); color: #fff; }
 
     .tags {
       display: flex;
@@ -180,11 +171,6 @@
       font-size: 14px;
     }
 
-    .tags a:hover {
-      background: var(--sage);
-      color: #fff;
-    }
-
     .summary-card {
       background: var(--paper);
       border-left: 5px solid var(--sage);
@@ -192,10 +178,6 @@
       padding: 18px 20px;
       line-height: 1.9;
       color: #4a433b;
-    }
-
-    .summary-card p {
-      margin: 8px 0 0;
     }
 
     .action-row {
@@ -324,11 +306,6 @@
       text-align: center;
     }
 
-    .social-card:hover {
-      transform: translateY(-2px);
-      border-color: var(--sage);
-    }
-
     .social-card strong {
       display: block;
       color: var(--sage-dark);
@@ -341,6 +318,13 @@
       font-size: 14px;
     }
 
+    .social-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--sage);
+    }
+
+
+    /* 同类型小说推荐：横向滑动循环 */
     .recommend-intro {
       margin: -4px 0 18px;
       color: var(--muted);
@@ -355,6 +339,19 @@
       padding: 4px 2px 16px;
       scrollbar-width: thin;
       scrollbar-color: var(--sage) transparent;
+    }
+
+    .recommend-slider::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .recommend-slider::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .recommend-slider::-webkit-scrollbar-thumb {
+      background: rgba(127, 147, 104, 0.45);
+      border-radius: 999px;
     }
 
     .recommend-track {
@@ -373,12 +370,13 @@
       border-radius: 22px;
       padding: 12px;
       box-shadow: 0 10px 24px rgba(95, 117, 75, 0.10);
-      transition: transform 0.25s ease, border-color 0.25s ease;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
     }
 
     .recommend-card:hover {
       transform: translateY(-4px);
       border-color: var(--sage);
+      box-shadow: 0 16px 34px rgba(95, 117, 75, 0.16);
     }
 
     .recommend-card img {
@@ -429,6 +427,12 @@
       color: #fff;
     }
 
+    body.dark-mode .recommend-card,
+    body.dark-mode .recommend-control button {
+      background: #31362b;
+      color: var(--text);
+    }
+
     .page-nav {
       margin: 34px 0 56px;
       display: flex;
@@ -468,52 +472,9 @@
     body.dark-mode .btn-soft,
     body.dark-mode .social-card,
     body.dark-mode .nav-links a,
-    body.dark-mode .nav-links button,
-    body.dark-mode .recommend-card,
-    body.dark-mode .recommend-control button {
+    body.dark-mode .nav-links button {
       background: #31362b;
       color: var(--text);
-    }
-
-    body.dark-mode .character-card p,
-    body.dark-mode .summary-card p,
-    body.dark-mode .section p,
-    body.dark-mode .recommend-intro,
-    body.dark-mode .social-card span,
-    body.dark-mode .recommend-card span,
-    body.dark-mode .chapter-list small {
-      color: #e6ddcf;
-    }
-
-    body.dark-mode .character-card h3 {
-      color: #f0b27a;
-    }
-
-    body.dark-mode .section h2,
-    body.dark-mode .social-card strong,
-    body.dark-mode .recommend-card strong,
-    body.dark-mode .novel-info h1,
-    body.dark-mode .brand {
-      color: #b8c8a4;
-    }
-
-    body.dark-mode .tags a,
-    body.dark-mode .meta span,
-    body.dark-mode .meta a {
-      background: rgba(220, 213, 238, 0.12);
-      color: #e6ddcf;
-      border-color: rgba(255,255,255,0.12);
-    }
-
-    body.dark-mode .meta a:hover,
-    body.dark-mode .tags a:hover {
-      background: #7f9368;
-      color: #fff;
-    }
-
-    body.dark-mode .btn-primary {
-      background: #7f9368;
-      color: #fff;
     }
 
     @media (max-width: 820px) {
@@ -544,8 +505,11 @@
 
 <body>
 
+  <!-- 顶部导航栏 -->
   <header class="site-header">
     <nav class="nav">
+
+      <!-- Logo 是有效按钮，点击返回首页 -->
       <a class="brand" href="../index.html">
         <img src="../assets/images/logo/logo.png" alt="泡菜小说坊 Logo">
         <span>泡菜小说坊</span>
@@ -562,53 +526,247 @@
 
   <main class="page-wrap">
 
+    <!-- 小说信息区 -->
     <section class="novel-hero">
+
+      <!-- 封面 -->
       <div class="cover-box">
-        <img id="novelCover" src="" alt="小说封面">
+        <img src="../assets/images/covers/hunting-swallow.png" alt="猎捕燕子封面">
       </div>
 
       <div class="novel-info">
-        <h1 id="novelTitle"></h1>
 
-        <div class="meta" id="novelMeta"></div>
+        <!-- 标题 -->
+        <h1>猎捕燕子</h1>
 
-        <div class="tags" id="novelTags"></div>
+        <!-- 作者 / 状态 / 分类 -->
+        <div class="meta">
+          <a href="../authors/whale.html">作者：Whale</a>
+          <a href="../tags/bl.html">分类：BL</a>
+          <a href="../status/ongoing.html">状态：连载中</a>
+          <span>更新：2026-05-26</span>
+        </div>
 
+        <!-- 标签 -->
+        <div class="tags">
+          <a href="../tags/modern.html">现代</a>
+          <a href="../tags/suspense.html">悬疑</a>
+          <a href="../tags/bl.html">BL</a>
+          <a href="../tags/modern.html">强制爱</a>
+          <a href="../tags/suspense.html">暗黑拉扯</a>
+        </div>
+
+        <!-- 简介 -->
         <div class="summary-card">
           <strong>作品简介：</strong>
-          <p id="novelSummary"></p>
+          <p>
+            危险的猎人与无法逃脱的燕子，在控制、试探与欲望之间展开一场极限拉扯。
+            她以为自己只是被锁定的猎物，却不知道真正失控的人，早已不是她。
+            当温柔成为陷阱，靠近也变成狩猎，这场关系最终会通向救赎，还是更深的深渊？
+          </p>
         </div>
 
         <div class="action-row">
-          <a class="btn btn-primary" id="readBtn" href="#">立即阅读</a>
+          <a class="btn btn-primary" href="../chapters/hunting-swallow/chapter-1.html">立即阅读</a>
+          <a class="btn btn-soft" href="../protected-reader.html?id=hunting-swallow-1&back=novels/hunting-swallow.html">会员保护阅读</a>
           <a class="btn btn-soft" href="#chapters">查看章节</a>
           <a class="btn btn-soft" href="#social">继续阅读</a>
         </div>
       </div>
     </section>
 
+    <!-- 主角介绍区 -->
     <section class="section" id="characters">
       <h2>主角介绍</h2>
-      <div class="character-grid" id="characterGrid"></div>
+
+      <div class="character-grid">
+
+        <!-- 男主介绍 -->
+        <article class="character-card">
+          <h3>男主</h3>
+          <p>
+            外表冷静克制，习惯用理性与规则掌控一切。  
+            他像猎人一样耐心，懂得等待，也懂得逼近。  
+            在感情里，他并不轻易表露真实欲望，却会用最温柔的方式设下无法逃离的网。
+          </p>
+        </article>
+
+        <!-- 女主介绍 -->
+        <article class="character-card">
+          <h3>女主</h3>
+          <p>
+            看似柔弱安静，实则敏感、清醒，拥有极强的自我保护意识。  
+            她像燕子一样习惯逃离危险，却一次次被卷入对方布下的情感迷局。  
+            她不是单纯的猎物，也会在绝境里反击。
+          </p>
+        </article>
+
+      </div>
     </section>
 
+    <!-- 章节目录 -->
     <section class="section" id="chapters">
       <h2>章节目录</h2>
-      <div class="chapter-list" id="chapterList"></div>
+
+      <div class="chapter-list">
+
+        <a href="../chapters/hunting-swallow/chapter-1.html">
+          <span>第1章</span>
+          <small>免费阅读</small>
+        </a>
+
+        <a href="../chapters/hunting-swallow/chapter-2.html">
+          <span>第2章</span>
+          <small>免费阅读</small>
+        </a>
+
+        <a href="../chapters/hunting-swallow/chapter-3.html">
+          <span>第3章</span>
+          <small>免费阅读</small>
+        </a>
+
+        <a href="../chapters/hunting-swallow/chapter-4.html">
+          <span>第4章</span>
+          <small>免费阅读</small>
+        </a>
+
+        <a href="../chapters/hunting-swallow/chapter-5.html">
+          <span>第5章</span>
+          <small>免费阅读</small>
+        </a>
+
+        <a href="../chapters/hunting-swallow/chapter-6.html">
+          <span>第6章</span>
+          <small>免费阅读</small>
+        </a>
+
+        <a href="../chapters/hunting-swallow/chapter-7.html">
+          <span>第7章</span>
+          <small>免费阅读</small>
+        </a>
+
+        <a href="../chapters/hunting-swallow/chapter-8.html">
+          <span>第8章</span>
+          <small>免费阅读</small>
+        </a>
+
+        <a href="../chapters/hunting-swallow/chapter-9.html">
+          <span>第9章</span>
+          <small>免费阅读</small>
+        </a>
+
+        <a href="../chapters/hunting-swallow/chapter-10.html">
+          <span>第10章</span>
+          <small>免费阅读</small>
+        </a>
+
+      </div>
     </section>
 
+    <!-- 社交入口 -->
     <section class="section" id="social">
       <h2>社交入口</h2>
-      <p>前期章节可免费阅读，后续章节可通过以下账号添加咨询。</p>
-      <div class="social-grid" id="socialGrid"></div>
+      <p>
+        前期章节可免费阅读，后续章节可通过以下入口添加账号咨询。
+      </p>
+
+      <div class="social-grid">
+
+        <!-- 把下面链接替换成你的真实微博主页 -->
+        <a class="social-card" href="https://weibo.com/" target="_blank" rel="noopener">
+          <strong>微博</strong>
+          <span>查看更新 / 私信咨询</span>
+        </a>
+
+        <!-- 这里可以换成你的微信二维码图片 -->
+        <a class="social-card" href="../assets/images/icons/wechat-qr.svg" target="_blank" rel="noopener">
+          <strong>微信</strong>
+          <span>扫码添加 / 咨询后续章节</span>
+        </a>
+
+        <!-- 把下面链接替换成你的小红书主页 -->
+        <a class="social-card" href="https://www.xiaohongshu.com/" target="_blank" rel="noopener">
+          <strong>小红书</strong>
+          <span>作品动态 / 下单入口</span>
+        </a>
+
+      </div>
     </section>
 
+
+    <!-- 同类型小说推荐 -->
     <section class="section" id="similar-novels">
       <h2>同类型小说推荐</h2>
-      <p class="recommend-intro" id="recommendIntro"></p>
+      <p class="recommend-intro">
+        喜欢《猎捕燕子》的话，也可以看看这些现代、悬疑、暗黑拉扯类型的作品。封面卡片可以横向滑动，并会自动循环滚动。
+      </p>
 
       <div class="recommend-slider" id="recommendSlider">
-        <div class="recommend-track" id="recommendTrack"></div>
+        <div class="recommend-track" id="recommendTrack">
+
+          <!-- 第一组推荐卡片 -->
+          <a class="recommend-card" href="../novels/liuan.html">
+            <img src="../assets/images/covers/liuan-cover.svg" alt="柳安封面">
+            <strong>柳安</strong>
+            <span>现代 · 悬疑 · 爱情</span>
+          </a>
+
+          <a class="recommend-card" href="../novels/fanzuoyong.html">
+            <img src="../assets/images/covers/fanzuoyong-cover.svg" alt="反作用定律封面">
+            <strong>反作用定律</strong>
+            <span>现代 · 女频 · 拉扯</span>
+          </a>
+
+          <a class="recommend-card" href="../novels/huimeng.html">
+            <img src="../assets/images/covers/huimeng-cover.svg" alt="灰梦档案封面">
+            <strong>灰梦档案</strong>
+            <span>悬疑 · 秘密 · 追踪</span>
+          </a>
+
+          <a class="recommend-card" href="../novels/yuese.html">
+            <img src="../assets/images/covers/yuese-cover.svg" alt="月色便利店封面">
+            <strong>月色便利店</strong>
+            <span>都市 · 温柔 · 治愈</span>
+          </a>
+
+          <a class="recommend-card" href="../novels/hunting-swallow.html">
+            <img src="../assets/images/covers/hunting-swallow.png" alt="猎捕燕子封面">
+            <strong>猎捕燕子</strong>
+            <span>现代 · 悬疑 · 暗黑拉扯</span>
+          </a>
+
+          <!-- 第二组推荐卡片：复制一遍，用来实现无缝循环 -->
+          <a class="recommend-card" href="../novels/liuan.html" aria-hidden="true" tabindex="-1">
+            <img src="../assets/images/covers/liuan-cover.svg" alt="">
+            <strong>柳安</strong>
+            <span>现代 · 悬疑 · 爱情</span>
+          </a>
+
+          <a class="recommend-card" href="../novels/fanzuoyong.html" aria-hidden="true" tabindex="-1">
+            <img src="../assets/images/covers/fanzuoyong-cover.svg" alt="">
+            <strong>反作用定律</strong>
+            <span>现代 · 女频 · 拉扯</span>
+          </a>
+
+          <a class="recommend-card" href="../novels/huimeng.html" aria-hidden="true" tabindex="-1">
+            <img src="../assets/images/covers/huimeng-cover.svg" alt="">
+            <strong>灰梦档案</strong>
+            <span>悬疑 · 秘密 · 追踪</span>
+          </a>
+
+          <a class="recommend-card" href="../novels/yuese.html" aria-hidden="true" tabindex="-1">
+            <img src="../assets/images/covers/yuese-cover.svg" alt="">
+            <strong>月色便利店</strong>
+            <span>都市 · 温柔 · 治愈</span>
+          </a>
+
+          <a class="recommend-card" href="../novels/hunting-swallow.html" aria-hidden="true" tabindex="-1">
+            <img src="../assets/images/covers/hunting-swallow.png" alt="">
+            <strong>猎捕燕子</strong>
+            <span>现代 · 悬疑 · 暗黑拉扯</span>
+          </a>
+
+        </div>
       </div>
 
       <div class="recommend-control">
@@ -617,9 +775,10 @@
       </div>
     </section>
 
+    <!-- 上一页 / 下一页 -->
     <div class="page-nav" id="bottom">
       <a class="btn btn-soft" href="../stories.html">← 上一页：返回小说列表</a>
-      <a class="btn btn-primary" id="nextPageBtn" href="#social">继续阅读 →</a>
+      <a class="btn btn-primary" href="#social">继续阅读 →</a>
     </div>
 
   </main>
@@ -627,221 +786,14 @@
   <footer class="site-footer">
     <div class="page-wrap">
       <p>© 泡菜小说坊 Paocai Novels</p>
-      <p>免费试读 · 咨询服务 </p>
+      <p>免费试读 · 社交入口咨询 · 长篇阅读收藏</p>
     </div>
   </footer>
 
   <script>
-    /*
-      ==================================================
-      小说详情页信息填写区
-      ==================================================
-
-      新增小说时，只需要修改 novelData。
-      作者、分类、状态都已经是有效按钮。
-
-      authorLink：作者主页
-      categoryLink：分类页
-      statusLink：状态页
-    */
-
-    const novelData = {
-      title: "猎捕燕子",
-
-      author: "Whale",
-      authorLink: "../authors/whale.html",
-
-      category: "BL",
-      categoryLink: "../tags/bl.html",
-
-      status: "连载中",
-      statusLink: "../status/ongoing.html",
-
-      updateDate: "2026-05-26",
-      cover: "../assets/images/covers/hunting-swallow.png",
-
-      tags: [
-        { name: "现代", link: "../tags/modern.html" },
-        { name: "伪善纯爱", link: "../tags/suspense.html" },
-        { name: "强制爱", link: "../tags/modern.html" },
-        { name: "暗黑拉扯", link: "../tags/suspense.html" }
-      ],
-
-      summary: `危险的猎人与无法逃脱的燕子，在控制、试探与欲望之间展开一场极限拉扯。
-他以为自己只是被锁定的猎物，却不知道真正失控的人，早已不是他。
-当温柔成为陷阱，靠近也变成狩猎，这场关系最终会通向救赎，还是更深的深渊？`,
-
-      characters: [
-        {
-          role: "攻",
-          name: "李姜周",
-          intro: `外表冷静克制，习惯用理性与规则掌控一切。
-他像猎人一样耐心，懂得等待，也懂得逼近。
-在感情里，他并不轻易表露真实欲望，却会用最温柔的方式设下无法逃离的网。`
-        },
-        {
-          role: "受",
-          name: "车海俊",
-          intro: `漂亮、卑微又机灵的男公关，为了还债周旋于客人之间。
-看似油滑，实则胆小敏感，拥有极强的求生本能。
-他不是单纯的猎物，也会在绝境里挣扎反击。`
-        }
-      ],
-
-      chapters: [
-        { title: "第1章", label: "免费阅读", link: "../chapters/hunting-swallow/chapter-1.html" },
-        { title: "第2章", label: "免费阅读", link: "../chapters/hunting-swallow/chapter-2.html" },
-        { title: "第3章", label: "免费阅读", link: "../chapters/hunting-swallow/chapter-3.html" },
-        { title: "第4章", label: "免费阅读", link: "../chapters/hunting-swallow/chapter-4.html" },
-        { title: "第5章", label: "免费阅读", link: "../chapters/hunting-swallow/chapter-5.html" },
-        { title: "第6章", label: "免费阅读", link: "../chapters/hunting-swallow/chapter-6.html" },
-        { title: "第7章", label: "免费阅读", link: "../chapters/hunting-swallow/chapter-7.html" },
-        { title: "第8章", label: "免费阅读", link: "../chapters/hunting-swallow/chapter-8.html" },
-        { title: "第9章", label: "免费阅读", link: "../chapters/hunting-swallow/chapter-9.html" },
-        { title: "第10章", label: "免费阅读", link: "../chapters/hunting-swallow/chapter-10.html" }
-      ],
-
-      social: [
-        {
-          name: "微博",
-          text: "查看更新 / 私信咨询",
-          link: "https://weibo.com/"
-        },
-        {
-          name: "微信",
-          text: "扫码添加 / 咨询后续章节",
-          link: "../assets/images/icons/wechat-qr.svg"
-        },
-        {
-          name: "小红书",
-          text: "作品动态 / 下单入口",
-          link: "https://www.xiaohongshu.com/"
-        }
-      ],
-
-      recommendIntro: "同类型作品推荐",
-
-      recommend: [
-        {
-          title: "柳安",
-          tag: "现代 · 悬疑 · 爱情",
-          cover: "../assets/images/covers/liuan-cover.svg",
-          link: "../novels/liuan.html"
-        },
-        {
-          title: "反作用定律",
-          tag: "现代 · 女频 · 拉扯",
-          cover: "../assets/images/covers/fanzuoyong-cover.svg",
-          link: "../novels/fanzuoyong.html"
-        },
-        {
-          title: "灰梦档案",
-          tag: "悬疑 · 秘密 · 追踪",
-          cover: "../assets/images/covers/huimeng-cover.svg",
-          link: "../novels/huimeng.html"
-        },
-        {
-          title: "月色便利店",
-          tag: "都市 · 温柔 · 治愈",
-          cover: "../assets/images/covers/yuese-cover.svg",
-          link: "../novels/yuese.html"
-        },
-        {
-          title: "猎捕燕子",
-          tag: "现代 · 悬疑 · 暗黑拉扯",
-          cover: "../assets/images/covers/hunting-swallow.png",
-          link: "../novels/hunting-swallow.html"
-        }
-      ]
-    };
-
-    function escapeHTML(value) {
-      return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    }
-
-    function textToHTML(value) {
-      return escapeHTML(value).replace(/\n/g, "<br>");
-    }
-
-    function renderNovelPage(data) {
-      document.title = `${data.title}｜泡菜小说坊`;
-
-      const cover = document.getElementById("novelCover");
-      cover.src = data.cover;
-      cover.alt = `${data.title}封面`;
-
-      document.getElementById("novelTitle").textContent = data.title;
-
-      document.getElementById("novelMeta").innerHTML = `
-        <a href="${data.authorLink}">作者：${escapeHTML(data.author)}</a>
-        <a href="${data.categoryLink}">分类：${escapeHTML(data.category)}</a>
-        <a href="${data.statusLink}">状态：${escapeHTML(data.status)}</a>
-        <span>更新：${escapeHTML(data.updateDate)}</span>
-      `;
-
-      document.getElementById("novelTags").innerHTML = data.tags.map(tag => `
-        <a href="${tag.link}">${escapeHTML(tag.name)}</a>
-      `).join("");
-
-      document.getElementById("novelSummary").innerHTML = textToHTML(data.summary);
-
-      const firstChapter = data.chapters[0] ? data.chapters[0].link : "#chapters";
-
-      document.getElementById("readBtn").href = firstChapter;
-      document.getElementById("nextPageBtn").href = "#social";
-
-      document.getElementById("characterGrid").innerHTML = data.characters.map(item => `
-        <article class="character-card">
-          <h3>${escapeHTML(item.role)}｜${escapeHTML(item.name)}</h3>
-          <p>${textToHTML(item.intro)}</p>
-        </article>
-      `).join("");
-
-      document.getElementById("chapterList").innerHTML = data.chapters.map(chapter => `
-        <a href="${chapter.link}">
-          <span>${escapeHTML(chapter.title)}</span>
-          <small>${escapeHTML(chapter.label)}</small>
-        </a>
-      `).join("");
-
-      document.getElementById("socialGrid").innerHTML = data.social.map(item => `
-        <a class="social-card" href="${item.link}" target="_blank" rel="noopener">
-          <strong>${escapeHTML(item.name)}</strong>
-          <span>${escapeHTML(item.text)}</span>
-        </a>
-      `).join("");
-
-      document.getElementById("recommendIntro").textContent = data.recommendIntro;
-
-      const recommendCards = data.recommend.map(item => `
-        <a class="recommend-card" href="${item.link}">
-          <img src="${item.cover}" alt="${escapeHTML(item.title)}封面">
-          <strong>${escapeHTML(item.title)}</strong>
-          <span>${escapeHTML(item.tag)}</span>
-        </a>
-      `).join("");
-
-      const recommendCardsClone = data.recommend.map(item => `
-        <a class="recommend-card" href="${item.link}" aria-hidden="true" tabindex="-1">
-          <img src="${item.cover}" alt="">
-          <strong>${escapeHTML(item.title)}</strong>
-          <span>${escapeHTML(item.tag)}</span>
-        </a>
-      `).join("");
-
-      document.getElementById("recommendTrack").innerHTML = recommendCards + recommendCardsClone;
-    }
-
-    renderNovelPage(novelData);
-
     const themeToggle = document.getElementById("themeToggle");
-    const savedTheme = localStorage.getItem("paocai-theme");
 
+    const savedTheme = localStorage.getItem("paocai-theme");
     if (savedTheme === "dark") {
       document.body.classList.add("dark-mode");
       themeToggle.textContent = "日间模式";
@@ -864,6 +816,7 @@
     const recommendNext = document.getElementById("recommendNext");
 
     if (recommendSlider && recommendPrev && recommendNext) {
+      let recommendTimer = null;
       let isPaused = false;
 
       function getHalfScrollWidth() {
@@ -880,7 +833,7 @@
         }
       }
 
-      window.setInterval(loopRecommend, 28);
+      recommendTimer = window.setInterval(loopRecommend, 28);
 
       recommendSlider.addEventListener("mouseenter", function () {
         isPaused = true;
@@ -892,21 +845,33 @@
 
       recommendPrev.addEventListener("click", function () {
         isPaused = true;
-        recommendSlider.scrollBy({ left: -220, behavior: "smooth" });
-        window.setTimeout(function () { isPaused = false; }, 1200);
+        recommendSlider.scrollBy({
+          left: -220,
+          behavior: "smooth"
+        });
+
+        window.setTimeout(function () {
+          isPaused = false;
+        }, 1200);
       });
 
       recommendNext.addEventListener("click", function () {
         isPaused = true;
-        recommendSlider.scrollBy({ left: 220, behavior: "smooth" });
+        recommendSlider.scrollBy({
+          left: 220,
+          behavior: "smooth"
+        });
 
         if (recommendSlider.scrollLeft >= getHalfScrollWidth()) {
           recommendSlider.scrollLeft = 0;
         }
 
-        window.setTimeout(function () { isPaused = false; }, 1200);
+        window.setTimeout(function () {
+          isPaused = false;
+        }, 1200);
       });
     }
+
   </script>
 
 </body>

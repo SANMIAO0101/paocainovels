@@ -1,0 +1,30 @@
+/* 泡菜小说坊：基础防复制与阅读水印。只能防普通复制，不能替代后端权限。 */
+.protected-reader,
+.protected-reader * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.protected-reader {
+  position: relative;
+}
+
+.protected-reader::before {
+  content: "泡菜小说坊 · 仅供学习阅读 · 禁止转载";
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  font-size: clamp(22px, 4vw, 36px);
+  color: rgba(127, 147, 104, 0.13);
+  pointer-events: none;
+  z-index: 3;
+  white-space: nowrap;
+}
+
+.protected-reader img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}

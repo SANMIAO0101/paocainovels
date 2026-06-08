@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /chapters/
+Disallow: /protected-reader.html
+Disallow: /reader.html
+Disallow: /vocabulary.html
+Disallow: /assets/data/
+Disallow: /cloudflare-worker/
