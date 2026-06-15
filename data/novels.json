@@ -24,42 +24,29 @@
         "id": "chapter-1",
         "title": "第1章 雨夜旧信",
         "date": "2026-06-06",
-        "file": "chapters/liuan/chapter-1.html",
+        "file": "protected-reader.html?id=liuan-1&back=novels/liuan.html",
         "access": "free",
-        "summary": "柳安在雨夜收到一封旧信。",
-        "content": [
-          "雨落在窗台上时，柳安正把最后一盏灯关掉。楼道深处传来信箱合上的轻响，像有人在黑暗里轻轻咬断了一根线。",
-          "她没有立刻去看。很多年前开始，她就习惯先判断声音的方向、距离和可能性，然后再允许自己靠近。",
-          "信封是米白色的，边角被雨水浸得发软。上面没有寄件人，只有她的名字。柳安。两个字写得端正，像一把故意擦干净的刀。",
-          "信纸上只有一句话：你以为那晚死去的人，真的只有一个吗？",
-          "柳安指尖一顿。窗外车灯从玻璃上划过去，她在倒影里看见自己苍白的脸，也看见身后门缝里多出了一道影子。"
-        ]
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-2",
         "title": "第2章 沈泊舟",
         "date": "2026-06-07",
-        "file": "chapters/liuan/chapter-2.html",
+        "file": "protected-reader.html?id=liuan-2&back=novels/liuan.html",
         "access": "free",
-        "summary": "她再次见到沈泊舟。",
-        "content": [
-          "沈泊舟来得比她预想中更快。",
-          "他站在便利店的暖光下，黑伞收得很整齐，袖口没有沾上一点雨水。这样的人无论出现在什么地方，都像提前知道结局。",
-          "柳安把信推过去，声音平静：‘你最好告诉我，这不是你开的玩笑。’",
-          "沈泊舟低头看完，唇边那点淡淡的笑意消失了。",
-          "‘不是我。’他说，‘但寄信的人认识我们。’",
-          "我们。柳安很久没有听见这个词被他用得这样自然。她抬眼看他，忽然想起七年前，他也曾用同样的语气告诉她：别回头，往前走。"
-        ]
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-3",
         "title": "第3章 黑色录音",
         "date": "2026-06-08",
-        "file": "chapters/liuan/chapter-3.html",
+        "file": "novels/liuan.html#order",
         "access": "order",
-        "summary": "后续章节可通过社交入口联系。"
+        "summary": "后续内容不放在网站上，请通过社交入口联系购买。"
       }
-    ]
+    ],
+    "originalUrl": "",
+    "originalSiteName": "正版原文页面"
   },
   {
     "id": "hunting-swallow",
@@ -92,93 +79,85 @@
         "id": "chapter-1",
         "title": "第一话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-1.html",
+        "file": "protected-reader.html?id=hunting-swallow-1&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。",
-        "content": []
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-2",
         "title": "第二话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-2.html",
+        "file": "protected-reader.html?id=hunting-swallow-2&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。",
-        "content": []
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-3",
         "title": "第三话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-3.html",
+        "file": "protected-reader.html?id=hunting-swallow-3&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。",
-        "content": []
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-4",
         "title": "第四话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-4.html",
+        "file": "protected-reader.html?id=hunting-swallow-4&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。",
-        "content": []
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-5",
         "title": "第五话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-5.html",
+        "file": "protected-reader.html?id=hunting-swallow-5&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。",
-        "content": []
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-6",
         "title": "第六章",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-6.html",
+        "file": "protected-reader.html?id=hunting-swallow-6&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。",
-        "content": []
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-7",
         "title": "第七章",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-7.html",
+        "file": "protected-reader.html?id=hunting-swallow-7&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。",
-        "content": []
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-8",
         "title": "第8话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-8.html",
+        "file": "protected-reader.html?id=hunting-swallow-8&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。",
-        "content": []
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-9",
         "title": "第9话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-9.html",
+        "file": "protected-reader.html?id=hunting-swallow-9&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。",
-        "content": []
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-10",
         "title": "第10话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-10.html",
+        "file": "protected-reader.html?id=hunting-swallow-10&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。",
-        "content": []
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       }
-    ]
+    ],
+    "originalUrl": "",
+    "originalSiteName": "正版原文页面"
   },
   {
     "id": "fanzuoyong",
@@ -204,41 +183,29 @@
         "id": "chapter-1",
         "title": "第1章 镜头之外",
         "date": "2026-06-05",
-        "file": "chapters/fanzuoyong/chapter-1.html",
+        "file": "protected-reader.html?id=fanzuoyong-1&back=novels/fanzuoyong.html",
         "access": "free",
-        "summary": "镜头关闭后，她接到他的电话。",
-        "content": [
-          "直播灯熄灭的一瞬间，许知眠才终于松开握得发僵的手。",
-          "手机在化妆台上震动，屏幕亮起的名字让整个房间都安静下来。",
-          "周砚庭。",
-          "她没有立刻接。镜子里的女人妆容精致，眼神却像刚从一场无声的战役里退下来。",
-          "电话第三次响起时，她按下接听。那头的声音很低：‘今晚别回家。’"
-        ]
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-2",
         "title": "第2章 危机公关",
         "date": "2026-06-06",
-        "file": "chapters/fanzuoyong/chapter-2.html",
+        "file": "protected-reader.html?id=fanzuoyong-2&back=novels/fanzuoyong.html",
         "access": "free",
-        "summary": "一条热搜把两个人推到台前。",
-        "content": [
-          "热搜是在凌晨两点爆的。",
-          "照片拍得模糊，却足够让所有人看清周砚庭替她挡住车门的动作。",
-          "许知眠盯着屏幕，忽然笑了一下。‘你不是说没人拍到吗？’",
-          "周砚庭站在窗边，声音平稳：‘拍到不代表不能处理。’",
-          "‘你处理新闻，我处理你。’她把手机反扣在桌上。"
-        ]
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-3",
         "title": "第3章 未公开关系",
         "date": "2026-06-07",
-        "file": "chapters/fanzuoyong/chapter-3.html",
+        "file": "novels/fanzuoyong.html#order",
         "access": "order",
-        "summary": "后续章节可通过社交入口联系。"
+        "summary": "后续内容不放在网站上，请通过社交入口联系购买。"
       }
-    ]
+    ],
+    "originalUrl": "",
+    "originalSiteName": "正版原文页面"
   },
   {
     "id": "huimeng",
@@ -265,39 +232,29 @@
         "id": "chapter-1",
         "title": "第1章 梦里来客",
         "date": "2026-06-01",
-        "file": "chapters/huimeng/chapter-1.html",
+        "file": "protected-reader.html?id=huimeng-1&back=novels/huimeng.html",
         "access": "free",
-        "summary": "诊所来了一个不会醒的病人。",
-        "content": [
-          "清晨六点，回梦诊所门口停着一辆没有牌照的黑车。",
-          "车里的人睡得很沉，手腕上却写着林栖的名字。",
-          "顾停云把白大褂扣到最后一颗，抬头看她：‘你昨晚梦见他了吗？’",
-          "林栖没有回答。她的掌心还留着梦里那把刀的触感。"
-        ]
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-2",
         "title": "第2章 失眠村",
         "date": "2026-06-02",
-        "file": "chapters/huimeng/chapter-2.html",
+        "file": "protected-reader.html?id=huimeng-2&back=novels/huimeng.html",
         "access": "free",
-        "summary": "村里开始集体失眠。",
-        "content": [
-          "从第二天起，村里没人再睡得着。",
-          "每个人都说自己听见了同一段铃声，像从很深的井底传上来。",
-          "林栖站在广播室门口，发现门锁被人从里面打开。",
-          "顾停云说：‘有人想把梦放出来。’"
-        ]
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-3",
         "title": "第3章 井底铃声",
         "date": "2026-06-03",
-        "file": "chapters/huimeng/chapter-3.html",
+        "file": "novels/huimeng.html#order",
         "access": "order",
-        "summary": "后续章节可通过社交入口联系。"
+        "summary": "后续内容不放在网站上，请通过社交入口联系购买。"
       }
-    ]
+    ],
+    "originalUrl": "",
+    "originalSiteName": "正版原文页面"
   },
   {
     "id": "yuese",
@@ -324,38 +281,28 @@
         "id": "chapter-1",
         "title": "第1章 月光门诊",
         "date": "2026-06-04",
-        "file": "chapters/yuese/chapter-1.html",
+        "file": "protected-reader.html?id=yuese-1&back=novels/yuese.html",
         "access": "free",
-        "summary": "病人只在月光下开口。",
-        "content": [
-          "夜间门诊只留了一盏灯。",
-          "病人坐在窗边，月光落在他的袖口上，他终于说了第一句话。",
-          "‘医生，我们以前见过。’",
-          "程越翻开病历，发现入院时间被人改过。"
-        ]
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-2",
         "title": "第2章 空白病历",
         "date": "2026-06-05",
-        "file": "chapters/yuese/chapter-2.html",
+        "file": "protected-reader.html?id=yuese-2&back=novels/yuese.html",
         "access": "free",
-        "summary": "档案里出现了不该存在的名字。",
-        "content": [
-          "病历的第三页是空白。",
-          "程越用灯照过去，纸背却慢慢浮出一行浅色的字。",
-          "那是他的签名。",
-          "病人抬起眼，轻声问：‘你终于想起来了吗？’"
-        ]
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-3",
         "title": "第3章 旧档案",
         "date": "2026-06-06",
-        "file": "chapters/yuese/chapter-3.html",
+        "file": "novels/yuese.html#order",
         "access": "order",
-        "summary": "后续章节可通过社交入口联系。"
+        "summary": "后续内容不放在网站上，请通过社交入口联系购买。"
       }
-    ]
+    ],
+    "originalUrl": "",
+    "originalSiteName": "正版原文页面"
   }
 ]

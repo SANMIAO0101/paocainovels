@@ -7,25 +7,25 @@
         "id": "chapter-1",
         "title": "第1章 雨夜旧信",
         "date": "2026-06-06",
-        "file": "chapters/liuan/chapter-1.html",
+        "file": "protected-reader.html?id=liuan-1&back=novels/liuan.html",
         "access": "free",
-        "summary": "柳安在雨夜收到一封旧信。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-2",
         "title": "第2章 沈泊舟",
         "date": "2026-06-07",
-        "file": "chapters/liuan/chapter-2.html",
+        "file": "protected-reader.html?id=liuan-2&back=novels/liuan.html",
         "access": "free",
-        "summary": "她再次见到沈泊舟。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-3",
         "title": "第3章 黑色录音",
         "date": "2026-06-08",
-        "file": "chapters/liuan/chapter-3.html",
+        "file": "novels/liuan.html#order",
         "access": "order",
-        "summary": "后续章节可通过社交入口联系。"
+        "summary": "后续内容不放在网站上，请通过社交入口联系购买。"
       }
     ]
   },
@@ -37,25 +37,25 @@
         "id": "chapter-1",
         "title": "第1章 镜头之外",
         "date": "2026-06-05",
-        "file": "chapters/fanzuoyong/chapter-1.html",
+        "file": "protected-reader.html?id=fanzuoyong-1&back=novels/fanzuoyong.html",
         "access": "free",
-        "summary": "镜头关闭后，她接到他的电话。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-2",
         "title": "第2章 危机公关",
         "date": "2026-06-06",
-        "file": "chapters/fanzuoyong/chapter-2.html",
+        "file": "protected-reader.html?id=fanzuoyong-2&back=novels/fanzuoyong.html",
         "access": "free",
-        "summary": "一条热搜把两个人推到台前。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-3",
         "title": "第3章 未公开关系",
         "date": "2026-06-07",
-        "file": "chapters/fanzuoyong/chapter-3.html",
+        "file": "novels/fanzuoyong.html#order",
         "access": "order",
-        "summary": "后续章节可通过社交入口联系。"
+        "summary": "后续内容不放在网站上，请通过社交入口联系购买。"
       }
     ]
   },
@@ -67,25 +67,25 @@
         "id": "chapter-1",
         "title": "第1章 梦里来客",
         "date": "2026-06-01",
-        "file": "chapters/huimeng/chapter-1.html",
+        "file": "protected-reader.html?id=huimeng-1&back=novels/huimeng.html",
         "access": "free",
-        "summary": "诊所来了一个不会醒的病人。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-2",
         "title": "第2章 失眠村",
         "date": "2026-06-02",
-        "file": "chapters/huimeng/chapter-2.html",
+        "file": "protected-reader.html?id=huimeng-2&back=novels/huimeng.html",
         "access": "free",
-        "summary": "村里开始集体失眠。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-3",
         "title": "第3章 井底铃声",
         "date": "2026-06-03",
-        "file": "chapters/huimeng/chapter-3.html",
+        "file": "novels/huimeng.html#order",
         "access": "order",
-        "summary": "后续章节可通过社交入口联系。"
+        "summary": "后续内容不放在网站上，请通过社交入口联系购买。"
       }
     ]
   },
@@ -97,25 +97,25 @@
         "id": "chapter-1",
         "title": "第1章 月光门诊",
         "date": "2026-06-04",
-        "file": "chapters/yuese/chapter-1.html",
+        "file": "protected-reader.html?id=yuese-1&back=novels/yuese.html",
         "access": "free",
-        "summary": "病人只在月光下开口。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-2",
         "title": "第2章 空白病历",
         "date": "2026-06-05",
-        "file": "chapters/yuese/chapter-2.html",
+        "file": "protected-reader.html?id=yuese-2&back=novels/yuese.html",
         "access": "free",
-        "summary": "档案里出现了不该存在的名字。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-3",
         "title": "第3章 旧档案",
         "date": "2026-06-06",
-        "file": "chapters/yuese/chapter-3.html",
+        "file": "novels/yuese.html#order",
         "access": "order",
-        "summary": "后续章节可通过社交入口联系。"
+        "summary": "后续内容不放在网站上，请通过社交入口联系购买。"
       }
     ]
   },
@@ -127,81 +127,81 @@
         "id": "chapter-1",
         "title": "第一话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-1.html",
+        "file": "protected-reader.html?id=hunting-swallow-1&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-2",
         "title": "第二话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-2.html",
+        "file": "protected-reader.html?id=hunting-swallow-2&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-3",
         "title": "第三话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-3.html",
+        "file": "protected-reader.html?id=hunting-swallow-3&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-4",
         "title": "第四话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-4.html",
+        "file": "protected-reader.html?id=hunting-swallow-4&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-5",
         "title": "第五话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-5.html",
+        "file": "protected-reader.html?id=hunting-swallow-5&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-6",
         "title": "第六章",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-6.html",
+        "file": "protected-reader.html?id=hunting-swallow-6&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-7",
         "title": "第七章",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-7.html",
+        "file": "protected-reader.html?id=hunting-swallow-7&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-8",
         "title": "第8话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-8.html",
+        "file": "protected-reader.html?id=hunting-swallow-8&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-9",
         "title": "第9话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-9.html",
+        "file": "protected-reader.html?id=hunting-swallow-9&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       },
       {
         "id": "chapter-10",
         "title": "第10话",
         "date": "2026-05-26",
-        "file": "chapters/hunting-swallow/chapter-10.html",
+        "file": "protected-reader.html?id=hunting-swallow-10&back=novels/hunting-swallow.html",
         "access": "free",
-        "summary": "《猎捕燕子》免费试读章节。"
+        "summary": "免费阅读，但正文不放在 GitHub；通过 Cloudflare Worker / KV 逐段保护加载。"
       }
     ]
   }

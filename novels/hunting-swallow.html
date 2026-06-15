@@ -171,6 +171,22 @@
       font-size: 14px;
     }
 
+    .original-source {
+      margin: 16px 0;
+      padding: 12px 14px;
+      border: 1px dashed var(--line);
+      border-radius: 16px;
+      background: rgba(127, 147, 104, 0.08);
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .original-source a {
+      color: var(--sage-dark);
+      font-weight: 800;
+      text-decoration: underline;
+    }
+
     .summary-card {
       background: var(--paper);
       border-left: 5px solid var(--sage);
@@ -556,6 +572,11 @@
           <a href="../tags/suspense.html">暗黑拉扯</a>
         </div>
 
+        <div class="original-source">
+          想看原文、支持正版，可以点击这里跳转到对应网站的小说网页：
+          <strong>正版原文链接待补充</strong>
+        </div>
+
         <!-- 简介 -->
         <div class="summary-card">
           <strong>作品简介：</strong>
@@ -567,8 +588,8 @@
         </div>
 
         <div class="action-row">
-          <a class="btn btn-primary" href="../chapters/hunting-swallow/chapter-1.html">立即阅读</a>
-          <a class="btn btn-soft" href="../protected-reader.html?id=hunting-swallow-1&back=novels/hunting-swallow.html">会员保护阅读</a>
+          <a class="btn btn-primary" href="../protected-reader.html?id=hunting-swallow-1&back=novels/hunting-swallow.html">立即阅读</a>
+          <a class="btn btn-soft" href="../protected-reader.html?id=hunting-swallow-1&back=novels/hunting-swallow.html">保护阅读模式</a>
           <a class="btn btn-soft" href="#chapters">查看章节</a>
           <a class="btn btn-soft" href="#social">继续阅读</a>
         </div>
@@ -610,54 +631,54 @@
 
       <div class="chapter-list">
 
-        <a href="../chapters/hunting-swallow/chapter-1.html">
+        <a href="../protected-reader.html?id=hunting-swallow-1&back=novels/hunting-swallow.html">
           <span>第1章</span>
-          <small>免费阅读</small>
+          <small>免费阅读 · 逐段保护</small>
         </a>
 
         <a href="../protected-reader.html?id=hunting-swallow-2&back=novels/hunting-swallow.html">
           <span>第2章</span>
-          <small>会员保护 · 逐段加载</small>
+          <small>免费阅读 · 逐段保护</small>
         </a>
 
         <a href="../protected-reader.html?id=hunting-swallow-3&back=novels/hunting-swallow.html">
           <span>第3章</span>
-          <small>会员保护 · 逐段加载</small>
+          <small>免费阅读 · 逐段保护</small>
         </a>
 
         <a href="../protected-reader.html?id=hunting-swallow-4&back=novels/hunting-swallow.html">
           <span>第4章</span>
-          <small>会员保护 · 逐段加载</small>
+          <small>免费阅读 · 逐段保护</small>
         </a>
 
         <a href="../protected-reader.html?id=hunting-swallow-5&back=novels/hunting-swallow.html">
           <span>第5章</span>
-          <small>会员保护 · 逐段加载</small>
+          <small>免费阅读 · 逐段保护</small>
         </a>
 
         <a href="../protected-reader.html?id=hunting-swallow-6&back=novels/hunting-swallow.html">
           <span>第6章</span>
-          <small>会员保护 · 逐段加载</small>
+          <small>免费阅读 · 逐段保护</small>
         </a>
 
         <a href="../protected-reader.html?id=hunting-swallow-7&back=novels/hunting-swallow.html">
           <span>第7章</span>
-          <small>会员保护 · 逐段加载</small>
+          <small>免费阅读 · 逐段保护</small>
         </a>
 
         <a href="../protected-reader.html?id=hunting-swallow-8&back=novels/hunting-swallow.html">
           <span>第8章</span>
-          <small>会员保护 · 逐段加载</small>
+          <small>免费阅读 · 逐段保护</small>
         </a>
 
         <a href="../protected-reader.html?id=hunting-swallow-9&back=novels/hunting-swallow.html">
           <span>第9章</span>
-          <small>会员保护 · 逐段加载</small>
+          <small>免费阅读 · 逐段保护</small>
         </a>
 
         <a href="../protected-reader.html?id=hunting-swallow-10&back=novels/hunting-swallow.html">
           <span>第10章</span>
-          <small>会员保护 · 逐段加载</small>
+          <small>免费阅读 · 逐段保护</small>
         </a>
 
       </div>
@@ -667,7 +688,7 @@
     <section class="section" id="social">
       <h2>社交入口</h2>
       <p>
-        第1章可作为普通试读章节直接阅读；第2章起为会员保护章节，不在 GitHub HTML 中存放完整正文。
+        从第1章开始，当前网站内提供的章节暂时免费阅读，但全部章节正文都不放在 GitHub HTML 中，统一通过 Cloudflare Worker / KV 逐段保护加载。后续付费内容不会出现在网站正文里，只通过社交入口联系。
       </p>
 
       <div class="social-grid">
@@ -778,7 +799,7 @@
     <!-- 上一页 / 下一页 -->
     <div class="page-nav" id="bottom">
       <a class="btn btn-soft" href="../stories.html">← 上一页：返回小说列表</a>
-      <a class="btn btn-primary" href="../chapters/hunting-swallow/chapter-1.html">继续阅读 →</a>
+      <a class="btn btn-primary" href="../protected-reader.html?id=hunting-swallow-1&back=novels/hunting-swallow.html">继续阅读 →</a>
     </div>
 
   </main>
@@ -786,7 +807,7 @@
   <footer class="site-footer">
     <div class="page-wrap">
       <p>© 泡菜小说坊 Paocai Novels</p>
-      <p>免费试读 · 社交入口咨询 · 长篇阅读收藏</p>
+      <p>保护试读 · 社交入口咨询 · 长篇阅读收藏</p>
     </div>
   </footer>
 

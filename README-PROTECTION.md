@@ -1,129 +1,153 @@
-# 泡菜小说坊：试读章节 + 完整章节保护阅读调整版
+# 泡菜小说坊：当前免费章节保护阅读说明
 
-本版本按照以下策略调整：
+本版本按你的最新规则调整：
 
-## 1. 普通试读章节
+- 网站当前提供的章节暂时都是免费阅读。
+- 但所有章节正文都不直接放在 GitHub HTML / data JSON 里。
+- 读者打开章节后，进入 `protected-reader.html`。
+- 读者完成 Cloudflare Turnstile 人机验证后，才能逐段加载正文。
+- 页面不提供“加载全文”，只提供“加载下一段”。
+- 每段正文通过一次性 ticket 请求，并带免费阅读 / IP / 时间动态水印。
+- 后续付费内容不上传到 GitHub，也不上传到 Cloudflare KV；页面只引导到微博 / 微信 / 小红书社交入口联系购买。
 
-试读章节可以继续放在 GitHub Pages 的 HTML 里，例如：
+## 上传到 GitHub 的文件
 
-```text
-chapters/hunting-swallow/chapter-1.html
-```
-
-已加入：
-
-```text
-noindex / nofollow / noarchive
-robots.txt 禁止抓取 chapters
-基础防复制
-右键限制
-阅读水印
-```
-
-注意：静态 HTML 只能防普通复制，不能 100% 防技术爬取。
-
-## 2. 完整章节
-
-完整章节不要直接放在 GitHub HTML 里。
-
-本包已把《猎捕燕子》第 2～10 章改成跳转页，不再存放完整正文：
+可以上传：
 
 ```text
-chapters/hunting-swallow/chapter-2.html
-...
-chapters/hunting-swallow/chapter-10.html
+assets/
+authors/
+chapters/
+data/
+novels/
+status/
+tags/
+.nojekyll
+index.html
+protected-reader.html
+robots.txt
+search.html
+stories.html
+README.md
+README-PROTECTION.md
 ```
 
-这些页面会跳转到：
+不要上传到 GitHub：
 
 ```text
-protected-reader.html?id=hunting-swallow-2
-protected-reader.html?id=hunting-swallow-3
-...
+cloudflare-worker/
 ```
 
-正文需要放到 Cloudflare KV / R2，再通过 Worker 分段读取。
+`cloudflare-worker/` 里面是 Worker 后端代码和 KV 示例章节正文，只用于复制到 Cloudflare 后台，不适合公开上传。
 
-## 3. protected-reader.html 已调整
+## 完整章节正文放哪里
 
-已删除“加载全文”。
+当前免费章节正文放到 Cloudflare KV 的 `CHAPTERS` 命名空间里。
 
-现在只保留：
+key 格式：
 
 ```text
-加载下一段
-朗读已加载内容
-停止朗读
-退出登录
+chapter:hunting-swallow-1
+chapter:hunting-swallow-2
+chapter:liuan-1
+chapter:fanzuoyong-1
 ```
 
-每次只请求一小段正文，并且每段都需要：
+value 格式可以是韩中双语：
+
+```json
+{
+  "novelTitle": "猎捕燕子",
+  "chapterTitle": "第1章",
+  "segments": [
+    {
+      "blocks": [
+        {
+          "ko": "这里放韩文原文。",
+          "cn": "这里放中文翻译。"
+        }
+      ]
+    }
+  ]
+}
+```
+
+也可以是普通单语正文：
+
+```json
+{
+  "novelTitle": "柳安",
+  "chapterTitle": "第1章 雨夜旧信",
+  "segments": [
+    {
+      "blocks": [
+        {
+          "text": "这里放普通章节正文。"
+        }
+      ]
+    }
+  ]
+}
+```
+
+## Worker 需要绑定的 KV
 
 ```text
-登录 session token
-一次性 ticket
-接口限速
-会员权限验证
-IP 检查
-动态阅读水印
+CHAPTERS
+RATE_LIMITS
+TICKETS
 ```
 
-## 4. Cloudflare Worker
+`USERS` 现在不是必须，因为当前章节是免费保护阅读，不需要会员账号登录。
 
-Worker 文件在：
+## Worker 需要设置的变量
+
+普通变量：
 
 ```text
-cloudflare-worker/worker.js
+ALLOWED_ORIGINS = https://sanmiao0101.github.io
+FREE_NOVELS = *
+LOGIN_LIMIT = 20
+LOGIN_WINDOW_SECONDS = 600
+TICKET_LIMIT = 80
+TICKET_WINDOW_SECONDS = 600
+SEGMENT_LIMIT = 240
+SEGMENT_WINDOW_SECONDS = 600
+TICKET_TTL_SECONDS = 120
+TICKET_TTL_MS = 120000
+SESSION_TTL_MS = 7200000
+BLOCKED_IPS =
+ALLOWED_IPS =
 ```
 
-已包含：
+Secret：
 
 ```text
-登录账号
-会员权限
-Turnstile 人机验证
-接口限速
-IP 限制
-一次性 token / ticket
-分段加载
-阅读水印
-BLOCKED_IPS 黑名单
+TOKEN_SECRET = 一串很长的随机密钥
+TURNSTILE_SECRET_KEY = Turnstile Secret Key
 ```
 
-## 5. 你需要在 protected-reader.html 替换两个位置
+## GitHub 页面需要替换的位置
+
+打开 `protected-reader.html`，替换：
 
 ```js
 const API_BASE="https://请替换为你的-worker-地址.workers.dev";
 ```
 
-把它换成你的 Worker 地址。
-
-再把：
+以及：
 
 ```html
 data-sitekey="请替换为你的_Turnstile_Site_Key"
 ```
 
-换成你的 Turnstile Site Key。
+## 注意
 
-Secret Key、阅读密码、TOKEN_SECRET 不要放到 GitHub，只能放在 Cloudflare Worker 的 Variables and Secrets 里。
+这套方案可以降低 WebToEpub、普通爬虫、直接查看源码复制正文的风险；但不能 100% 防止已通过验证的用户截图、拍屏或手动摘录。动态水印用于追踪和劝阻二次传播。
 
-## 6. Cloudflare KV 章节 key
 
-第2章正文建议放：
+## 本次版权提示更新
 
-```text
-chapter:hunting-swallow-2
-```
-
-第3章正文：
-
-```text
-chapter:hunting-swallow-3
-```
-
-格式参考：
-
-```text
-cloudflare-worker/kv-samples/chapter-hunting-swallow-2.json
-```
+- 动态水印文字：泡菜小说坊自汉化，谢绝任何形式转载和商用
+- 每章正文全部加载完成后，系统会自动在正文结尾追加：温馨提示：本站由泡菜小说坊整理，著作权归原作者所有。该翻译仅供学习交流，严禁任何形式的转载 、复制、摘编或用于商业盈利，请支持正版
+- 小说详情页已预留“支持正版 / 原文链接”行。请在 `data/novels.json` 中把每本小说的 `originalUrl` 改成真实正版原文网页地址。
