@@ -1,9 +1,0 @@
-{
-  "password": "123456",
-  "level": "vip",
-  "expiresAt": "2027-12-31T23:59:59Z",
-  "allowedNovels": [
-    "hunting-swallow"
-  ],
-  "allowedChapters": []
-}
