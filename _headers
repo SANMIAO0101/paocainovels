@@ -1,0 +1,8 @@
+/reader.html
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Referrer-Policy: same-origin
+  X-Content-Type-Options: nosniff
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
