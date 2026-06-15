@@ -1,7 +1,7 @@
 User-agent: *
-Disallow: /chapters/
-Disallow: /protected-reader.html
 Disallow: /reader.html
-Disallow: /vocabulary.html
-Disallow: /assets/data/
-Disallow: /cloudflare-worker/
+Disallow: /chapters/
+Disallow: /api/
+Disallow: /worker/
+
+Sitemap: https://SANMIAO0101.github.io/paocainovels/sitemap.xml

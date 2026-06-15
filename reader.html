@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>阅读 - 泡菜小说坊</title>
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="reader-page">
+<header class="site-header"><a class="brand" href="index.html">泡菜小说坊</a><nav><a href="stories.html">Stories</a><a href="javascript:history.back()">返回</a></nav></header>
+<div class="watermark-layer" aria-hidden="true"></div>
+<main class="reader-shell">
+  <h1 id="chapterTitle">章节阅读</h1>
+  <p class="notice">正文采用分段加载。请勿转载、复制、摘编或用于商业盈利。</p>
+  <div id="readerContent" class="reader-content"></div>
+  <button id="loadNextBtn" class="btn">加载下一段</button>
+  <p id="readerStatus" class="reader-status"></p>
+</main>
+<footer class="site-footer">泡菜小说坊自汉化，谢绝任何形式转载和商用。</footer>
+<script>
+  window.PAOCAI_CONFIG = {
+    // 部署 Cloudflare Worker 后，把这里替换成你的 Worker 地址，例如：
+    // apiBase: "https://paocai-reader.your-name.workers.dev"
+    apiBase: "https://YOUR-WORKER-URL.workers.dev",
+    turnstileToken: "demo-token"
+  };
+</script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/reader.js"></script>
+</body>
+</html>
