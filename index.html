@@ -1,1 +1,46 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>泡菜小说坊｜首页</title><meta name="description" content="泡菜小说坊：免费阅读原创/自建小说，后续章节可从社交入口联系下单购买。"><link rel="icon" href="assets/images/logo/logo.png"><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/mobile.css"><script>window.SITE_BASE="";</script><script defer src="assets/js/main.js"></script><script defer src="assets/js/slider.js"></script></head><body class="home-page" ><header class="site-header"><div class="container navbar"><a class="brand" href="index.html" aria-label="泡菜小说坊，返回首页" title="返回首页"><img class="logo" src="assets/images/logo/logo.png" alt="泡菜罐Logo"><span>泡菜小说坊</span></a><nav class="nav-links" aria-label="主导航"><a href="index.html">Home</a><a href="stories.html">Stories</a><a href="search.html">搜索</a><button class="theme-toggle" type="button" aria-label="切换夜间模式">夜间模式</button></nav></div></header><main><section class="hero"><div class="container"><div id="hero-slider" class="banner-shell" aria-label="Banner轮播区"></div></div></section><section class="section"><div class="container"><div class="section-head"><div><h2 class="section-title">推荐小说</h2><p class="section-desc">精选主打作品，适合放网站首页重点展示。</p></div><a class="outline-btn" href="stories.html">查看全部</a></div><div id="featured-grid" class="grid"></div></div></section><section class="section"><div class="container"><div class="section-head"><div><h2 class="section-title">最新小说</h2><p class="section-desc">按更新时间排序，方便读者追更。</p></div></div><div id="latest-grid" class="grid"></div></div></section><section class="section"><div class="container"><div class="section-head"><div><h2 class="section-title">最新章节</h2><p class="section-desc">小说名 + 最新章节 + 日期，后续章节可跳转社交入口。</p></div></div><div id="updates-list" class="updates-list"></div></div></section><section class="section"><div class="container"><div class="section-head"><div><h2 class="section-title">社交入口</h2><p class="section-desc">前期免费观看；后续章节可以添加账号咨询下单购买。</p></div></div><div id="social-render"></div></div></section></main><footer class="footer"><div class="container footer-inner"><span>© 2026 泡菜小说坊 · PaoCai Novels</span><span><a href="stories.html">小说列表</a> · <a href="search.html">搜索</a> · <a href="assets/images/icons/wechat-qr.svg" target="_blank" rel="noopener">微信入口</a></span></div></footer></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>泡菜小说坊</title>
+  <meta name="description" content="泡菜小说坊：韩文小说学习阅读站，双语阅读、分段加载、动态水印。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">泡菜小说坊</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="search.html">搜索</a>
+    </nav>
+  </header>
+
+  <main class="home">
+    <section class="hero">
+      <p class="eyebrow">Paocai Novels</p>
+      <h1>韩文小说学习阅读站</h1>
+      <p>章节正文采用 Cloudflare Worker / KV 分段加载，页面仅保留阅读器外壳，适合免费学习试读与后续会员保护。</p>
+      <a class="btn" href="stories.html">进入书库</a>
+    </section>
+
+    <section class="grid-section">
+      <h2>推荐作品</h2>
+      <div class="book-grid">
+        <article class="book-card">
+          <div class="cover placeholder">猎捕燕子</div>
+          <div class="book-body">
+            <span class="pill">BL</span><span class="status">连载中</span>
+            <h3><a href="novels/hunting-swallow.html">猎捕燕子</a></h3>
+            <p>示例详情页。正文不写入 GitHub HTML，点击阅读后由接口分段加载。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">泡菜小说坊自汉化，谢绝任何形式转载和商用。</footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
